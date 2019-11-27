@@ -1,0 +1,17 @@
+.carouselContainer{
+    margin-top: 77px;
+    margin-bottom: 70px;
+  }
+  
+.carouselContainer img{
+  object-fit: cover;
+  height: 620px;
+}
+
+.carouselContainer p{
+  font-size: 25px;
+}
+
+.darker{
+  color: #3a3b3d;
+}

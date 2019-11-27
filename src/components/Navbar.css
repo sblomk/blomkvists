@@ -1,0 +1,18 @@
+.blomtainer{
+    margin-left: 20%;
+    margin-right: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+.blomtainer a{
+    font-size: 25px;
+}
+
+.nav-link{
+margin-right: 20px;
+}
+
+#navbarNav a{
+font-size: 18px;
+}

@@ -1,0 +1,18 @@
+.jumboContainer{
+    margin-top: 77px;
+    margin-bottom: 70px;
+}
+
+.jumbotron{
+    object-fit: cover;
+    height: 620px;
+    background-image: url("../images/projectsJumbo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: white;
+}
+
+.headline{
+    text-align: center;
+}
