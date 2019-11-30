@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import Carousel from '../components/Carousel.jsx';
 import './Home.css';
-import { LatestProjects } from '../components/LatestProjects';
+import { Projects } from '../components/Projects';
 import { HomeIntro } from '../components/HomeIntro';
 
 export class Home extends Component {
@@ -13,7 +13,10 @@ export class Home extends Component {
             <Navbar />
             <Carousel />
             <HomeIntro />
-            <LatestProjects />
+            <div className="container">
+                <h1>Projects</h1>
+            </div>
+            <Projects />
             <Footer />
             </>
         )

@@ -4,6 +4,7 @@ import './Carousel.css';
 import me from '../images/studyPic.jpg';
 import ux from '../images/UXpic.jpg';
 import hci from '../images/bizPic.jpg';
+import sust from '../images/sustainable.jpg'
 
 export class Carousel extends Component {
     render() {
@@ -14,6 +15,7 @@ export class Carousel extends Component {
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
                     </ol>
                     <div className="carousel-inner">
                     
@@ -29,23 +31,33 @@ export class Carousel extends Component {
                     </div>
                     <div className="carousel-item">
                         <img src={ux} className="d-block w-100" alt=""/>
-                        <Link to="/projects">
+                        <a href="#projects">
                             <div className="carousel-caption d-none d-md-block">                        
                             <h1>User Experience Design</h1>
                             <p>View more projects in UX design.</p>
                             <div style={{height: '50px'}}></div>
                             </div>
-                        </Link>
+                        </a>
                     </div>
                     <div className="carousel-item">
                         <img src={hci} className="d-block w-100" alt=""/>
-                        <Link to="/about">
+                        <a href="#projects">
                             <div className="carousel-caption d-none d-md-block">
-                            <h1 className="darker">Sustainable HCI</h1>
-                            <p className="darker">View more projects in sustainable HCI</p>
+                            <h1 className="darker">Human-Computer Interaction</h1>
+                            <p className="darker">View more projects in Human-computer interaction</p>
                             <div style={{height: '50px'}}></div>
                             </div>
-                        </Link>
+                        </a>
+                    </div>
+                    <div className="carousel-item">
+                        <img src={sust} className="d-block w-100" alt=""/>
+                        <a href="#projects">
+                            <div className="carousel-caption d-none d-md-block">
+                            <h1>Sustainable HCI</h1>
+                            <p>View more projects in sustainable HCI</p>
+                            <div style={{height: '50px'}}></div>
+                            </div>
+                        </a>
                     </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">

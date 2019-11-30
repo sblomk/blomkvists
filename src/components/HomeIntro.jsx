@@ -14,7 +14,8 @@ export class HomeIntro extends Component {
                 <div className="col-md-7 order-md-2">
                     <div style={{height: '50px'}}></div>
                     <h2 className="featurette-heading">Hello, I'm Sebastian. <span className="text-muted">Welcome to my site.</span></h2>
-                    <p className="lead">I'm currently studying the Interactive Media Technology masters programme at KTH with a focus on Human Computer Interaction. 
+                    <p className="lead">I'm currently studying the <span className="font-weight-bolder bg-light">Interactive Media Technology </span>  
+                    masters programme at KTH with a focus on <span className="font-weight-bolder bg-light"> Human-Computer Interaction</span>. 
                     Areas that I find interesting is UX and interaction design, sustainable HCI, web development, and digital transformation management. 
                     <span className="text-muted font-weight-bolder"> Explore the site to find out more!</span></p>
                 </div>

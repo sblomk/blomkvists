@@ -5,7 +5,7 @@
   
 .carouselContainer img{
   object-fit: cover;
-  height: 620px;
+  height: 450px;
 }
 
 .carouselContainer p{

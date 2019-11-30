@@ -18,9 +18,6 @@ export class Navbar extends Component {
                         <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/projects">Projects</Link>
-                    </li>
-                    <li className="nav-item">
                         <Link className="nav-link" to="/about">About me</Link>
                     </li>
                     </ul>

@@ -2,15 +2,16 @@ import React, { Component } from 'react'
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import './About.css';
-import { Jumbotron } from '../components/Jumbotron';
+import Jumbotron from '../components/Jumbotron';
+import me from '../images/aboutMe.jpg'
 
-export class Home extends Component {
+export class About extends Component {
     render() {
         return (
             <>
             <Navbar />
-            <Jumbotron title="Who am I?" pic="../images/aboutMe.jpg"/>
-            <div className="container" id="about" style={{height: '500px', marginTop: '100px'}}>
+            <Jumbotron/>
+            <div className="container" id="about" style={{height: '500px', marginTop: '75px'}}>
                 <h1 className="text-center" data-aos="fade-up">About me</h1>
             </div>
             <Footer />
@@ -19,4 +20,4 @@ export class Home extends Component {
     }
 }
 
-export default Home
+export default About
