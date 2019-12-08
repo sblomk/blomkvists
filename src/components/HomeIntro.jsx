@@ -17,7 +17,7 @@ export class HomeIntro extends Component {
                     <p className="lead">I'm currently studying the <span className="font-weight-bolder bg-light">Interactive Media Technology </span>  
                     masters programme at KTH with a focus on <span className="font-weight-bolder bg-light"> Human-Computer Interaction</span>. 
                     Areas that I find interesting is UX and interaction design, sustainable HCI, web development, and digital transformation management. 
-                    <span className="text-muted font-weight-bolder"> Explore the site to find out more!</span></p>
+                    <span className="text-muted font-weight-bolder"> Scroll down to find out more!</span></p>
                 </div>
                 <div className="col-md-5 order-md-1">
                     <img src={meBookFirst} alt="" className="d-block w-100" 
@@ -26,7 +26,6 @@ export class HomeIntro extends Component {
                     />
                 </div>
                 </div>
-                <hr/>
             </div>
             </div>
         )

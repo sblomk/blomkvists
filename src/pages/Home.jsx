@@ -7,16 +7,31 @@ import { Projects } from '../components/Projects';
 import { HomeIntro } from '../components/HomeIntro';
 
 export class Home extends Component {
+    constructor(props){
+        super(props)
+        this.scrollToProjects = this.scrollToProjects.bind(this)
+        this.projects = React.createRef()
+    }
+
+
+    //Not implemented
+    scrollToProjects(){
+        if(this.projects.current){
+            this.projects.current.scrollIntoView({ 
+            behavior: "smooth", 
+            block: "nearest"
+            })
+        }
+    }
+
+
     render() {
         return (
             <>
             <Navbar />
             <Carousel />
-            <HomeIntro />
-            <div className="container">
-                <h1>Projects</h1>
-            </div>
-            <Projects />
+            <HomeIntro scrollToProjects={this.scrollToProjects}/>
+            <Projects ref={this.projects}/>
             <Footer />
             </>
         )

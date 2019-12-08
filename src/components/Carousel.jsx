@@ -9,7 +9,7 @@ import sust from '../images/sustainable.jpg'
 export class Carousel extends Component {
     render() {
         return (
-            <div className="carouselContainer">
+            <div className="carouselContainer" id="topCarousel">
                 <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-ride="carousel">
                     <ol className="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
@@ -20,7 +20,7 @@ export class Carousel extends Component {
                     <div className="carousel-inner">
                     
                     <div className="carousel-item active">
-                        <img src={me} className="d-block w-100" alt=""/>
+                        <img src={me} className="d-block w-100" alt="sebastian blomkvist"/>
                         <Link to="/about">
                             <div className="carousel-caption d-none d-md-block">
                             <h1>Sebastian Blomkvist</h1>
@@ -30,7 +30,7 @@ export class Carousel extends Component {
                         </Link>
                     </div>
                     <div className="carousel-item">
-                        <img src={ux} className="d-block w-100" alt=""/>
+                        <img src={ux} className="d-block w-100" alt="User experience design"/>
                         <a href="#projects">
                             <div className="carousel-caption d-none d-md-block">                        
                             <h1>User Experience Design</h1>
@@ -40,7 +40,7 @@ export class Carousel extends Component {
                         </a>
                     </div>
                     <div className="carousel-item">
-                        <img src={hci} className="d-block w-100" alt=""/>
+                        <img src={hci} className="d-block w-100" alt="Human-Computer interaction"/>
                         <a href="#projects">
                             <div className="carousel-caption d-none d-md-block">
                             <h1 className="darker">Human-Computer Interaction</h1>
@@ -50,7 +50,7 @@ export class Carousel extends Component {
                         </a>
                     </div>
                     <div className="carousel-item">
-                        <img src={sust} className="d-block w-100" alt=""/>
+                        <img src={sust} className="d-block w-100" alt="sustainability"/>
                         <a href="#projects">
                             <div className="carousel-caption d-none d-md-block">
                             <h1>Sustainable HCI</h1>

@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import './About.css';
 import Jumbotron from '../components/Jumbotron';
-import me from '../images/aboutMe.jpg'
 
 export class About extends Component {
     render() {
