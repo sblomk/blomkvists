@@ -34,8 +34,13 @@ transform: translate(-50%, -50%);
 }
 
 .cardBtn {
-background-color: #4CAF50;
+background-color:#3726c9;
 color: white;
 font-size: 16px;
 padding: 10px 22px;
+}
+
+.cardBtn:hover {
+    color: white;
+    padding: 12px 26px;
 }

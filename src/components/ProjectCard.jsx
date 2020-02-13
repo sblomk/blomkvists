@@ -12,7 +12,7 @@ function ProjectCard(props) {
                         <button onClick={() => props.details(props.name, props.fullDescription, props.keywords)} className="cardBtn btn" data-toggle="modal" data-target=".bd-example-modal-lg">More »</button>
                     </div>
                 </div>
-                <div style={{ height: '255px', overflow: 'hidden' }}>
+                <div style={{ height: '245px', overflow: 'hidden', paddingLeft: '1%', paddingRight: '1%' }}>
                     <h3>{props.name}</h3>
                     <p>{props.description}</p>
                     <p><span className="text-muted font-weight-bolder">Keywords: </span><cite title="keys" className="text-muted">{props.keywords}</cite></p>
