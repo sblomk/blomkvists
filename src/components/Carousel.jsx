@@ -9,7 +9,7 @@ import sust from '../images/sustainable.jpg'
 export class Carousel extends Component {
     render() {
         return (
-            <div className="carouselContainer" id="topCarousel">
+            <div className="carouselContainer" id="home">
                 <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-ride="carousel">
                     <ol className="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>

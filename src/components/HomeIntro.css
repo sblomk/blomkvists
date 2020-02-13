@@ -1,3 +1,10 @@
 .intro{
-    margin: 50px;
+    margin: 110px;
+}
+.introImg {
+    border-radius: 50%;
+  }
+
+.introText{
+    padding-top: 200px;
 }

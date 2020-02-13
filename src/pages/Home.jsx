@@ -29,7 +29,7 @@ export class Home extends Component {
         return (
             <>
             <Navbar />
-            <Carousel />
+            {/* <Carousel /> */}
             <HomeIntro scrollToProjects={this.scrollToProjects}/>
             <Projects ref={this.projects}/>
             <Footer />

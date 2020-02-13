@@ -1,20 +1,17 @@
 import React from 'react'
 
 function ProjectCollapse(props) {
-        if(props.collapseShow === false){
-            return (
-                <div className="col-md-12" id={props.id}></div>
-            )
-        } else{
-            return (
-                <div className="col-md-12" id={props.id}>
-                    <div className="card card-body">
-                        <div className="container">
-                            <button type="button" className="close" aria-label="Close" onClick={() => props.closeCollapse()}>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h3>{props.name}</h3>
-                            <hr></hr>
+        return (
+                <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-lg">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                        <h3 className="modal-title" id="exampleModalLabel">{props.name}</h3>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div className="modal-body">
                             <h5>Description</h5>
                             <p>{props.fullDescription}</p>
                             <br></br>
@@ -25,8 +22,8 @@ function ProjectCollapse(props) {
                         </div>
                     </div>
                 </div>
-            )
-        }
+                </div>
+        )
 }
 
 export default ProjectCollapse

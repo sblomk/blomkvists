@@ -23,37 +23,15 @@ export class Projects extends Component {
             keywords: "none"
         }
         this.details = this.details.bind(this)
-        this.closeCollapse = this.closeCollapse.bind(this)
         this.focusProject = React.createRef()
     }
 
     details(name, desc, keys){
-        if(this.state.collapseShow=== true){
-            this.setState({
-                name: name,
-                description: desc,
-                keywords: keys
-            })
-            if(this.focusProject.current){
-                this.focusProject.current.scrollIntoView({ 
-                behavior: "smooth", 
-                block: "nearest"
-                })
-            }
-        } else{
-            this.setState({
-                name: name,
-                collapseShow: true, 
-                description: desc,
-                keywords: keys
-            })
-            if(this.focusProject.current){
-                this.focusProject.current.scrollIntoView({ 
-                behavior: "smooth", 
-                block: "nearest"
-                })
-            }
-        }
+        this.setState({
+            name: name,
+            description: desc,
+            keywords: keys
+        })
     }
 
     closeCollapse(){
@@ -136,15 +114,20 @@ export class Projects extends Component {
                     description="Redesigning spotify's 'Running' function using the Double Diamond deisgn process. New ways of interacting with the application was developed
                     as well as new functionality."
                     keywords="HCI, UX design, double diamond, user studies, hi-fi prototyping, evaluation methods"
-                    fullDescription="A real life problem that you may have stumbled across is the legitimacy and availability of 
-                    public drinking in the parks of Stockholm. Some parks in Stockholm has set up rules for prohibiting public drinking while 
-                    other parks haven’t. What BierGarten has sought to achieve is an increase in accessibility of these rules. This would be of 
-                    purpose for people eager to drink in a park. Some technologies used to create this was Google Maps API, Onsen UI, JavaScript, HTML, and CSS"
+                    fullDescription="Interaction with your phone during exercising can be troublesome. This project set out to make this interaction easier, either by
+                    introducing new ways of interacting or adding functionalities which removes the need to even interact with the application in the first place. 
+                    The Double Diamond design process was utilized which consists of four phases. First the descover phase where we studied users, through interviews and 
+                    surveys, and conducted a state of the art analysis of the field. The results of the first phase was then used in the second (define) phase where we 
+                    created personas and scenarios to define design requirements and formulate a vision statement. Then we enter the develop phase where we started designing 
+                    prototypes based on what we have learned in the previous phases. These prototypes was evaluated through user tests and based on that feedback we decided on
+                    a final prototyope which we the finalized in last (deliever) phase. To minimize the need to interact with the application we implemented functionality which
+                    shapes the music to your running, in terms of tempo and mood. This would be based on sensor data from the phone. New functionality to lock the tempo, if 
+                    the user wishes to keep a certain tempo for a while, was introduced. To lock the tempo, the user just had to tap the phone, thus making interaction easier."
                     imgUrl={running}
                     details={this.details}/>
                 <ProjectCard 
                     name="Social Media Use" 
-                    description="Bachelor thesis"
+                    description="Bachelor thesis exploring how and why users of social media distribute their activity over several of these at the same time."
                     keywords="User study, interviews, social media, privacy, informational norms"
                     fullDescription="This qualitative study examines how and why users of social media distribute their activity over several of these at the same time. 
                     Focus was on the three social media sites of Facebook, Instagram and Snapchat. The study was carried through by keeping paired interviews with users 
