@@ -1,7 +1,6 @@
 .blomtainer{
     margin-right: 3%;
     margin-top: 10px;
-    margin-bottom: 10px;
   }
   
 .blomtainer a{
@@ -14,4 +13,10 @@ margin-right: 20px;
 
 #navbarNav a{
 font-size: 18px;
+color: #1d4382;
 }
+
+h4{
+color: #1d4382;
+}
+

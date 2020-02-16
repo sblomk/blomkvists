@@ -5,11 +5,11 @@ function ProjectCard(props) {
 
     return (
         <>
-            <div className="col-md-4" style={{ padding: '2%' }}>
+            <div className="projectCard col-md-5" style={{ padding: '2%' }}>
                 <div className="cardImgContainer">
-                    <img src={props.imgUrl} className="cardImg latest d-block w-100" alt="" style={{ backgroundColor: "#ebfcf1", cursor: "pointer" }} onClick={() => props.details(props.name, props.fullDescription, props.keywords)}/>
+                    <img src={props.imgUrl} className="cardImg latest d-block w-100" alt="" style={{ backgroundColor: "#ebfcf1", cursor: "pointer" }} onClick={() => props.details(props.name, props.fullDescription, props.keywords, props.process)}/>
                     <div className="middle">
-                        <button onClick={() => props.details(props.name, props.fullDescription, props.keywords)} className="cardBtn btn" data-toggle="modal" data-target=".bd-example-modal-lg">More »</button>
+                        <button onClick={() => props.details(props.name, props.fullDescription, props.keywords, props.process)} className="cardBtn btn" data-toggle="modal" data-target=".bd-example-modal-lg">More »</button>
                     </div>
                 </div>
                 <div style={{ height: '245px', overflow: 'hidden', paddingLeft: '1%', paddingRight: '1%' }}>

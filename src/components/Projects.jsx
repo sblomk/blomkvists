@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ProjectCard from './ProjectCard.jsx'
 import './Projects.css';
-import ProjectCollapse from './ProjectCollapse.jsx'
 
 import carbonIcon from '../images/avpro.jpg'
 import bierIcon from '../images/bgt.jpg'
@@ -10,6 +9,9 @@ import genderIcon from '../images/genderIcon.JPG'
 import bachelorIcon from '../images/KTH.png'
 import veloIcon from '../images/veloIcon.png'
 import running from '../images/spotifyRunning.jpg'
+import userResearch from '../images/UserResearch.png'
+import ProjectModal from './ProjectModal.jsx';
+
 
 
 
@@ -18,25 +20,20 @@ export class Projects extends Component {
         super(props)
         this.state ={
             name: "none",
-            collapseShow: false,
             description: "none",
-            keywords: "none"
+            keywords: "none",
+            process: "none"
         }
         this.details = this.details.bind(this)
         this.focusProject = React.createRef()
     }
 
-    details(name, desc, keys){
+    details(name, desc, keys, proc){
         this.setState({
             name: name,
             description: desc,
-            keywords: keys
-        })
-    }
-
-    closeCollapse(){
-        this.setState({
-            collapseShow: false,
+            keywords: keys,
+            process: proc 
         })
     }
 
@@ -49,32 +46,34 @@ export class Projects extends Component {
             </div>
             <div className="container" id="projects">
                 <div className="row" style={{marginBottom: '50px'}}>
-                <ProjectCollapse 
-                    id="collapse"
+                <ProjectModal 
+                    id="projectModal"
                     name={this.state.name}
                     fullDescription={this.state.description}
                     keywords={this.state.keywords}
-                    collapseShow={this.state.collapseShow}
-                    closeCollapse={this.closeCollapse}/>
+                    process={this.state.process}/>
                 <ProjectCard 
-                    name="Carbon Budget"
-                    description="This concept website visualises a person's carbon budget(s) using negative slope graphs customized by user input."
-                    keywords="Sustainable HCI, carbon budgets, prototyping, persuasive design"
-                    fullDescription="In this project we explored how to visualize a carbon budget to raise awareness and motivate behavioral change. 
-                    Our design process ended up in a website where users can explore how long their carbon budget will last based on their carbon emitting activities. 
-                    This is done by the user entering information about these activities and the carbon budget will then be displayed in a graph over then user’s lifetime. 
-                    The final design is focused on user friendliness, at the cost of precision in the presented result. Mostly due to the use of non scientific units 
-                    in both the entering of information by the user and the end result. The key aspect of the design aimed towards raising awareness is the direct 
-                    feedback in the graph and the top menu when changing the inputted information, showing the user how much carbon certain behaviors emits and how fast 
-                    it depletes the budget. This may result in negative valence which is prone to raise awareness but, on the other hand, also decrease user engagement. 
-                    This is by some extent combated by an overall positive design of the website and the use of easily understandable metrics to easen engagement with the site."
-                    imgUrl={carbonIcon}
+                    name="Spotify Running 2.0"
+                    description="Redesigning spotify's 'Running' function using the Double Diamond deisgn process. New ways of interacting with the application was developed
+                    as well as new functionality."
+                    process={userResearch}
+                    keywords="UX design, Double Diamond, User studies, hi-fi prototyping, Evaluation methods"
+                    fullDescription="Interaction with your phone during exercising can be troublesome. This project set out to make this interaction easier, either by
+                    introducing new ways of interacting or adding functionalities which removes the need to even interact with the application in the first place. 
+                    The Double Diamond design process was utilized which consists of four phases. First the descover phase where we studied users, through interviews and 
+                    surveys, and conducted a state of the art analysis of the field. The results of the first phase was then used in the second (define) phase where we 
+                    created personas and scenarios to define design requirements and formulate a vision statement. Then we enter the develop phase where we started designing 
+                    prototypes based on what we have learned in the previous phases. These prototypes was evaluated through user tests and based on that feedback we decided on
+                    a final prototyope which we the finalized in last (deliever) phase. To minimize the need to interact with the application we implemented functionality which
+                    shapes the music to your running, in terms of tempo and mood. This would be based on sensor data from the phone. New functionality to lock the tempo, if 
+                    the user wishes to keep a certain tempo for a while, was introduced. To lock the tempo, the user just had to tap the phone, thus making interaction easier."
+                    imgUrl={running}
                     details={this.details}/>
                 <ProjectCard 
-                    name="Velo" 
+                    name="The Velo" 
                     description="Concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
                     an interactive turning wheel and a ring of green LED-lights around it"
-                    keywords="HCI, UX design, design processes, field studies, evaluation methods"
+                    keywords="UX design, design processes, field studies, evaluation methods"
                     fullDescription="In this project we developed a concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
                     an interactive turning wheel and a ring of green LED-lights around it.  It allows you to search for a location, and then show you the way to it through the 
                     ring of LEDs. Or as we like to call it, the compass ring. This can be done either directly by pre-set locations on the Velo, or by searching manually in the 
@@ -84,7 +83,7 @@ export class Projects extends Component {
                     imgUrl={veloIcon}
                     details={this.details}/>
                 <ProjectCard 
-                    name="Genderadar" 
+                    name="GendeRadar" 
                     description="This project is about visualizing the variables which the gender inequality index is built upon and to show how gender 
                     inequality looks on a world wide scale."
                     keywords="Information visualization, gender inequality, D3.js, angularJS"
@@ -110,20 +109,18 @@ export class Projects extends Component {
                     imgUrl={genderIcon}
                     details={this.details} />
                 <ProjectCard 
-                    name="Spotify running"
-                    description="Redesigning spotify's 'Running' function using the Double Diamond deisgn process. New ways of interacting with the application was developed
-                    as well as new functionality."
-                    keywords="HCI, UX design, double diamond, user studies, hi-fi prototyping, evaluation methods"
-                    fullDescription="Interaction with your phone during exercising can be troublesome. This project set out to make this interaction easier, either by
-                    introducing new ways of interacting or adding functionalities which removes the need to even interact with the application in the first place. 
-                    The Double Diamond design process was utilized which consists of four phases. First the descover phase where we studied users, through interviews and 
-                    surveys, and conducted a state of the art analysis of the field. The results of the first phase was then used in the second (define) phase where we 
-                    created personas and scenarios to define design requirements and formulate a vision statement. Then we enter the develop phase where we started designing 
-                    prototypes based on what we have learned in the previous phases. These prototypes was evaluated through user tests and based on that feedback we decided on
-                    a final prototyope which we the finalized in last (deliever) phase. To minimize the need to interact with the application we implemented functionality which
-                    shapes the music to your running, in terms of tempo and mood. This would be based on sensor data from the phone. New functionality to lock the tempo, if 
-                    the user wishes to keep a certain tempo for a while, was introduced. To lock the tempo, the user just had to tap the phone, thus making interaction easier."
-                    imgUrl={running}
+                    name="Carbon Budgets"
+                    description="This concept website visualises a person's carbon budget(s) using negative slope graphs customized by user input."
+                    keywords="Sustainable HCI, carbon budgets, prototyping, persuasive design"
+                    fullDescription="In this project we explored how to visualize a carbon budget to raise awareness and motivate behavioral change. 
+                    Our design process ended up in a website where users can explore how long their carbon budget will last based on their carbon emitting activities. 
+                    This is done by the user entering information about these activities and the carbon budget will then be displayed in a graph over then user’s lifetime. 
+                    The final design is focused on user friendliness, at the cost of precision in the presented result. Mostly due to the use of non scientific units 
+                    in both the entering of information by the user and the end result. The key aspect of the design aimed towards raising awareness is the direct 
+                    feedback in the graph and the top menu when changing the inputted information, showing the user how much carbon certain behaviors emits and how fast 
+                    it depletes the budget. This may result in negative valence which is prone to raise awareness but, on the other hand, also decrease user engagement. 
+                    This is by some extent combated by an overall positive design of the website and the use of easily understandable metrics to easen engagement with the site."
+                    imgUrl={carbonIcon}
                     details={this.details}/>
                 <ProjectCard 
                     name="Social Media Use" 

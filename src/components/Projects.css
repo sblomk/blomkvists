@@ -1,5 +1,6 @@
-h2{
-    margin-bottom: 20px
+h1{
+    margin-bottom: 20px;
+    color: #1d4382;
 }
 
 .latest{
@@ -10,3 +11,4 @@ h2{
 .row{
     margin-top: 20px;
 }
+

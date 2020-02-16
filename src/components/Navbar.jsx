@@ -7,7 +7,7 @@ export class Navbar extends Component {
             <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-white">
                 <div className="container">
                 <div className="blomtainer">
-                    <h3>Blomkvist's</h3>
+                    <h4>Sebastian<br/>Blomkvist</h4>
                 </div>
                 <div className="div-inline my-2 my-lg-0">
                 <div className="collapse navbar-collapse" id="navbarNav">

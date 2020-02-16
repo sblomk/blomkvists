@@ -1,6 +1,7 @@
 import React from 'react'
+import './ProjectModal.css';
 
-function ProjectCollapse(props) {
+function ProjectModal(props) {
         return (
                 <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-lg">
@@ -12,6 +13,11 @@ function ProjectCollapse(props) {
                         </button>
                         </div>
                         <div className="modal-body">
+                            <h5>Process</h5>
+                            <div className="processContainer">
+                                <img className="processPic" src={props.process} alt=""></img>
+                                <p>User Research</p>
+                            </div>
                             <h5>Description</h5>
                             <p>{props.fullDescription}</p>
                             <br></br>
@@ -26,4 +32,4 @@ function ProjectCollapse(props) {
         )
 }
 
-export default ProjectCollapse
+export default ProjectModal
