@@ -4,12 +4,16 @@ import './Projects.css';
 
 import carbonIcon from '../images/avpro.jpg'
 import bierIcon from '../images/bgt.jpg'
-import infoIcon from '../images/info.jpg'
 import genderIcon from '../images/genderIcon.JPG'
 import bachelorIcon from '../images/KTH.png'
 import veloIcon from '../images/veloIcon.png'
 import running from '../images/spotifyRunning.jpg'
-import userResearch from '../images/UserResearch.png'
+import runningProcess from '../images/RunningProcess.png'
+import veloProcess from '../images/VeloProcess.png'
+import genderProcess from '../images/GenderProcess.png'
+import persuasiveProcess from '../images/PersuasiveProcess.png'
+import bierProcess from '../images/BierProcess.png'
+import bachelorProcess from '../images/BachelorProcess.png'
 import ProjectModal from './ProjectModal.jsx';
 
 
@@ -20,6 +24,7 @@ export class Projects extends Component {
         super(props)
         this.state ={
             name: "none",
+            brief: "none",
             description: "none",
             keywords: "none",
             process: "none"
@@ -28,12 +33,13 @@ export class Projects extends Component {
         this.focusProject = React.createRef()
     }
 
-    details(name, desc, keys, proc){
+    details(name, desc, keys, proc, brief){
         this.setState({
             name: name,
             description: desc,
             keywords: keys,
-            process: proc 
+            process: proc,
+            brief: brief
         })
     }
 
@@ -51,29 +57,33 @@ export class Projects extends Component {
                     name={this.state.name}
                     fullDescription={this.state.description}
                     keywords={this.state.keywords}
-                    process={this.state.process}/>
+                    process={this.state.process}
+                    brief={this.state.brief}/>
                 <ProjectCard 
                     name="Spotify Running 2.0"
-                    description="Redesigning spotify's 'Running' function using the Double Diamond deisgn process. New ways of interacting with the application was developed
+                    description="Redesigning spotify's 'Running' feature using the Double Diamond in the UX design process. New ways of interacting with the application was developed
                     as well as new functionality."
-                    process={userResearch}
-                    keywords="UX design, Double Diamond, User studies, hi-fi prototyping, Evaluation methods"
-                    fullDescription="Interaction with your phone during exercising can be troublesome. This project set out to make this interaction easier, either by
-                    introducing new ways of interacting or adding functionalities which removes the need to even interact with the application in the first place. 
-                    The Double Diamond design process was utilized which consists of four phases. First the descover phase where we studied users, through interviews and 
-                    surveys, and conducted a state of the art analysis of the field. The results of the first phase was then used in the second (define) phase where we 
-                    created personas and scenarios to define design requirements and formulate a vision statement. Then we enter the develop phase where we started designing 
-                    prototypes based on what we have learned in the previous phases. These prototypes was evaluated through user tests and based on that feedback we decided on
-                    a final prototyope which we the finalized in last (deliever) phase. To minimize the need to interact with the application we implemented functionality which
-                    shapes the music to your running, in terms of tempo and mood. This would be based on sensor data from the phone. New functionality to lock the tempo, if 
-                    the user wishes to keep a certain tempo for a while, was introduced. To lock the tempo, the user just had to tap the phone, thus making interaction easier."
+                    brief="Interaction with your phone during exercising can be troublesome. This UX design project set out to make this interaction easier, either by
+                    introducing new ways of interacting or adding functionalities which removes the need to even interact with the application in the first place."
+                    process={runningProcess}
+                    keywords="UX design, Double Diamond, User Research, Hi-fi Prototyping, User Tests"
+                    fullDescription="The Double Diamond design process was utilized which consists of four phases. First the discovery phase where we studied users, 
+                    through interviews and surveys, and conducted a competative analysis of the field. The results of the first phase was then used in the second 
+                    (define) phase where we created personas and scenarios to define design requirements and formulate our vision statement. Then we enter the develop 
+                    phase where we started designing prototypes based on what we have learned in the previous phases. These prototypes was evaluated through user tests 
+                    and based on that feedback we decided on a final prototype which we the finalized in last (deliver) phase. To minimize the need to interact with the 
+                    application we implemented functionality which shapes the music to your running, in terms of tempo and mood. This would be based on sensor data from 
+                    the phone. New functionality to lock the tempo, if  the user wishes to keep a certain tempo for a while, was introduced. To lock the tempo, the user 
+                    just had to tap the phone, thus making interaction easier.
+                    "
                     imgUrl={running}
                     details={this.details}/>
                 <ProjectCard 
                     name="The Velo" 
                     description="Concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
                     an interactive turning wheel and a ring of green LED-lights around it"
-                    keywords="UX design, design processes, field studies, evaluation methods"
+                    process={veloProcess}
+                    keywords="UX design, User Research, Prototyping"
                     fullDescription="In this project we developed a concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
                     an interactive turning wheel and a ring of green LED-lights around it.  It allows you to search for a location, and then show you the way to it through the 
                     ring of LEDs. Or as we like to call it, the compass ring. This can be done either directly by pre-set locations on the Velo, or by searching manually in the 
@@ -86,7 +96,8 @@ export class Projects extends Component {
                     name="GendeRadar" 
                     description="This project is about visualizing the variables which the gender inequality index is built upon and to show how gender 
                     inequality looks on a world wide scale."
-                    keywords="Information visualization, gender inequality, D3.js, angularJS"
+                    process={genderProcess}
+                    keywords="Information Architecture, Front-end Development, AngularJS"
                     fullDescription="Gender inequality is a huge problem in the world that hinders the development of a globalized, equal society.
                     The united nations has been working to tackle this problem in various ways. One of their measurements is the
                     gender inequality index. This index is based upon different variables that indicates how developed a country is
@@ -110,8 +121,9 @@ export class Projects extends Component {
                     details={this.details} />
                 <ProjectCard 
                     name="Carbon Budgets"
-                    description="This concept website visualises a person's carbon budget(s) using negative slope graphs customized by user input."
-                    keywords="Sustainable HCI, carbon budgets, prototyping, persuasive design"
+                    description="By developing a website in React.js and conducting user tests I explored how multimodality influence persuasiveness."
+                    process={persuasiveProcess}
+                    keywords="Web Development, User Tests, Persuasive design"
                     fullDescription="In this project we explored how to visualize a carbon budget to raise awareness and motivate behavioral change. 
                     Our design process ended up in a website where users can explore how long their carbon budget will last based on their carbon emitting activities. 
                     This is done by the user entering information about these activities and the carbon budget will then be displayed in a graph over then user’s lifetime. 
@@ -125,7 +137,8 @@ export class Projects extends Component {
                 <ProjectCard 
                     name="Social Media Use" 
                     description="Bachelor thesis exploring how and why users of social media distribute their activity over several of these at the same time."
-                    keywords="User study, interviews, social media, privacy, informational norms"
+                    process={bachelorProcess}
+                    keywords="UX research, User Interviews, Competative Analysis"
                     fullDescription="This qualitative study examines how and why users of social media distribute their activity over several of these at the same time. 
                     Focus was on the three social media sites of Facebook, Instagram and Snapchat. The study was carried through by keeping paired interviews with users 
                     of these sites and then applying the results on the framework of contextual integrity. The result of the study is interesting both for companies 
@@ -143,29 +156,16 @@ export class Projects extends Component {
                     details={this.details}/>
                 <ProjectCard 
                     name="BierGarten"
+                    process={bierProcess}
                     description="Some parks in Stockholm has set up rules for prohibiting public drinking while other parks haven't. 
                     What BierGarten has sought to achieve is an increase in accessibility of these rules. 
                     This would be of purpose for people eager to drink in a park"
-                    keywords="Web development, Google Maps API"
+                    keywords="Web Development, Google Maps API"
                     fullDescription="A real life problem that you may have stumbled across is the legitimacy and availability of 
                     public drinking in the parks of Stockholm. Some parks in Stockholm has set up rules for prohibiting public drinking while 
                     other parks haven’t. What BierGarten has sought to achieve is an increase in accessibility of these rules. This would be of 
                     purpose for people eager to drink in a park. Some technologies used to create this was Google Maps API, Onsen UI, JavaScript, HTML, and CSS"
                     imgUrl={bierIcon}
-                    details={this.details}/>
-                <ProjectCard 
-                    name="Happiness and values" 
-                    description="This site gives you the possility to explore how highly different aspects of life are valued in varoius 
-                    countries and how this go together with the happiness and life satisfaction of the population in these countries across 20 years."
-                    keywords="Information visualization, D3.js, javascript"
-                    fullDescription="This site gives you the possility to explore how highly different aspects of life are valued in
-                    varoius countries and how this go together with the happiness and life satisfaction of the population in these countries across 20 years.
-                    It is possible to filter what value that are shown on the map and you can then see what percentage of the population
-                    that percieve that value as very important. Or you can see what percentage are happy or satisfied with their life.
-                    With a click on the map you can zoom in and explore all the value variables for a specific country over a 20-year span.
-                    You can filter for what variables to look at and compare. Here it is also possible to compare values of the chosen country with another country's.
-                    Use the filters on the world map to find a country that you want to be in your comparison."
-                    imgUrl={infoIcon}
                     details={this.details}/>
                 </div>
             </div>

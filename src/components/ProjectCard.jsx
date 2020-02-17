@@ -7,15 +7,15 @@ function ProjectCard(props) {
         <>
             <div className="projectCard col-md-5" style={{ padding: '2%' }}>
                 <div className="cardImgContainer">
-                    <img src={props.imgUrl} className="cardImg latest d-block w-100" alt="" style={{ backgroundColor: "#ebfcf1", cursor: "pointer" }} onClick={() => props.details(props.name, props.fullDescription, props.keywords, props.process)}/>
+                    <img src={props.imgUrl} className="cardImg latest d-block w-100" alt="" style={{ backgroundColor: "#ebfcf1", cursor: "pointer" }} onClick={() => props.details(props.name, props.fullDescription, props.keywords, props.process, props.brief)}/>
                     <div className="middle">
-                        <button onClick={() => props.details(props.name, props.fullDescription, props.keywords, props.process)} className="cardBtn btn" data-toggle="modal" data-target=".bd-example-modal-lg">More »</button>
+                        <button onClick={() => props.details(props.name, props.fullDescription, props.keywords, props.process, props.brief)} className="cardBtn btn" data-toggle="modal" data-target=".bd-example-modal-lg">More »</button>
                     </div>
                 </div>
                 <div style={{ height: '245px', overflow: 'hidden', paddingLeft: '1%', paddingRight: '1%' }}>
                     <h3>{props.name}</h3>
                     <p>{props.description}</p>
-                    <p><span className="text-muted font-weight-bolder">Keywords: </span><cite title="keys" className="text-muted">{props.keywords}</cite></p>
+                    <p className="keysP"><span className="font-weight-bolder">Keywords: </span><cite title="keys">{props.keywords}</cite></p>
                 </div>
             </div>
 

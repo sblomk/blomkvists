@@ -13,12 +13,11 @@ function ProjectModal(props) {
                         </button>
                         </div>
                         <div className="modal-body">
+                            <p>{props.brief}</p>
                             <h5>Process</h5>
                             <div className="processContainer">
                                 <img className="processPic" src={props.process} alt=""></img>
-                                <p>User Research</p>
                             </div>
-                            <h5>Description</h5>
                             <p>{props.fullDescription}</p>
                             <br></br>
                             <h5>What I learned</h5>
