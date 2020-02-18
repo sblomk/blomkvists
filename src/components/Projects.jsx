@@ -14,32 +14,37 @@ import genderProcess from '../images/GenderProcess.png'
 import persuasiveProcess from '../images/PersuasiveProcess.png'
 import bierProcess from '../images/BierProcess.png'
 import bachelorProcess from '../images/BachelorProcess.png'
-import ProjectModal from './ProjectModal.jsx';
-
-
+import ProjectModal1 from './ProjectModal1.jsx';
+import ProjectModal2 from './ProjectModal2.jsx';
+import ProjectModal3 from './ProjectModal3.jsx';
+import ProjectModal4 from './ProjectModal4.jsx';
 
 
 export class Projects extends Component {
     constructor(props){
         super(props)
         this.state ={
+            id: "none",
             name: "none",
             brief: "none",
             description: "none",
             keywords: "none",
-            process: "none"
+            process: "none",
+            modal: "none"
         }
         this.details = this.details.bind(this)
         this.focusProject = React.createRef()
     }
 
-    details(name, desc, keys, proc, brief){
+    details(id, name, desc, keys, proc, brief, modal){
         this.setState({
+            id: id,
             name: name,
             description: desc,
             keywords: keys,
             process: proc,
-            brief: brief
+            brief: brief,
+            modal: modal
         })
     }
 
@@ -48,18 +53,12 @@ export class Projects extends Component {
             <>
             <div className="container">
             <hr ref={this.focusProject}/>
-                <h1>Projects</h1>
+                <h1 className="projecth1 font-weight-normal">Projects</h1>
             </div>
             <div className="container" id="projects">
                 <div className="row" style={{marginBottom: '50px'}}>
-                <ProjectModal 
-                    id="projectModal"
-                    name={this.state.name}
-                    fullDescription={this.state.description}
-                    keywords={this.state.keywords}
-                    process={this.state.process}
-                    brief={this.state.brief}/>
                 <ProjectCard 
+                    id="1"
                     name="Spotify Running 2.0"
                     description="Redesigning spotify's 'Running' feature using the Double Diamond in the UX design process. New ways of interacting with the application was developed
                     as well as new functionality."
@@ -77,8 +76,10 @@ export class Projects extends Component {
                     just had to tap the phone, thus making interaction easier.
                     "
                     imgUrl={running}
-                    details={this.details}/>
+                    details={this.details}
+                    modal="#modal1"/>
                 <ProjectCard 
+                    id="2"
                     name="The Velo" 
                     description="Concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
                     an interactive turning wheel and a ring of green LED-lights around it"
@@ -91,8 +92,10 @@ export class Projects extends Component {
                     bike was that it was quicker to get through city, that you don’t have to adapt to the public transportation timetables, and that it was a more pleasant ride overall.
                     From these results we created personas to further aid us in the design process."
                     imgUrl={veloIcon}
-                    details={this.details}/>
+                    details={this.details}
+                    modal="#modal2"/>
                 <ProjectCard 
+                    id="3"
                     name="GendeRadar" 
                     description="This project is about visualizing the variables which the gender inequality index is built upon and to show how gender 
                     inequality looks on a world wide scale."
@@ -118,10 +121,13 @@ export class Projects extends Component {
                     country and its development over time. If a country is not clicked, the details will show how the variable has
                     changed for the entire world over time."
                     imgUrl={genderIcon}
-                    details={this.details} />
+                    details={this.details}
+                    modal="#modal3" />
                 <ProjectCard 
+                    id="4"
                     name="Carbon Budgets"
-                    description="By developing a website in React.js and conducting user tests I explored how multimodality influence persuasiveness."
+                    description="By developing a website in React.js and conducting user tests I explored how the combination of sound and visual feedback 
+                    influences persuasiveness."
                     process={persuasiveProcess}
                     keywords="Web Development, User Tests, Persuasive design"
                     fullDescription="In this project we explored how to visualize a carbon budget to raise awareness and motivate behavioral change. 
@@ -133,8 +139,10 @@ export class Projects extends Component {
                     it depletes the budget. This may result in negative valence which is prone to raise awareness but, on the other hand, also decrease user engagement. 
                     This is by some extent combated by an overall positive design of the website and the use of easily understandable metrics to easen engagement with the site."
                     imgUrl={carbonIcon}
-                    details={this.details}/>
-                <ProjectCard 
+                    details={this.details}
+                    modal="#modal4"/>
+                {/* <ProjectCard 
+                    id="5"
                     name="Social Media Use" 
                     description="Bachelor thesis exploring how and why users of social media distribute their activity over several of these at the same time."
                     process={bachelorProcess}
@@ -155,6 +163,7 @@ export class Projects extends Component {
                     imgUrl={bachelorIcon}
                     details={this.details}/>
                 <ProjectCard 
+                    id="6"
                     name="BierGarten"
                     process={bierProcess}
                     description="Some parks in Stockholm has set up rules for prohibiting public drinking while other parks haven't. 
@@ -166,7 +175,39 @@ export class Projects extends Component {
                     other parks haven’t. What BierGarten has sought to achieve is an increase in accessibility of these rules. This would be of 
                     purpose for people eager to drink in a park. Some technologies used to create this was Google Maps API, Onsen UI, JavaScript, HTML, and CSS"
                     imgUrl={bierIcon}
-                    details={this.details}/>
+                    details={this.details}/> */}
+                <ProjectModal1
+                    id="projectModal1"
+                    name={this.state.name}
+                    fullDescription={this.state.description}
+                    keywords={this.state.keywords}
+                    process={this.state.process}
+                    brief={this.state.brief}
+                    modal={this.state.modal}/>
+                <ProjectModal2
+                    id="projectModal2"
+                    name={this.state.name}
+                    fullDescription={this.state.description}
+                    keywords={this.state.keywords}
+                    process={this.state.process}
+                    brief={this.state.brief}
+                    modal={this.state.modal}/>
+                <ProjectModal3
+                    id="projectModal3"
+                    name={this.state.name}
+                    fullDescription={this.state.description}
+                    keywords={this.state.keywords}
+                    process={this.state.process}
+                    brief={this.state.brief}
+                    modal={this.state.modal}/>
+                <ProjectModal4
+                    id="projectModal4"
+                    name={this.state.name}
+                    fullDescription={this.state.description}
+                    keywords={this.state.keywords}
+                    process={this.state.process}
+                    brief={this.state.brief}
+                    modal={this.state.modal}/>
                 </div>
             </div>
             </>

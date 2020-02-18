@@ -20,9 +20,9 @@ export class HomeIntro extends Component {
                         </a>
                     </div>
                     <div className="introText col-md-7 order-md-2">
-                        <h2 className="featurette-heading">Hello, I'm <span style={{color: "#1d4382"}}>Sebastian</span>. <span className="niceText">Nice to see you!</span></h2>
-                        <p className="lead"> My name is Sebastian Blomkvist and I'm currently studying the <span className="font-weight-bolder" style={{color: "#1d4382"}}>Interactive Media Technology </span>  
-                        masters programme at KTH with a focus on <span className="font-weight-bolder" style={{color: "#1d4382"}}> User Experience Design and Research</span>, 
+                        <h1 className="featurette-heading font-weight-light">Hello, I'm <span className="font-weight-normal" style={{color: "#1d4382"}}>Sebastian</span>. <span className="niceText">Nice to see you!</span></h1>
+                        <p className="lead"> My name is Sebastian Blomkvist and I'm currently studying my last year at the <span className="font-weight-bolder" style={{color: "#1d4382"}}>Interactive Media Technology </span>  
+                        masters programme at <span className="font-weight-bolder" style={{color: "#1d4382"}}>KTH</span> with a focus on <span className="font-weight-bolder" style={{color: "#1d4382"}}> User Experience Design and Research</span>, 
                         especially its psychological and persuasive aspects. I also enjoy <span className="font-weight-bolder" style={{color: "#1d4382"}}>front-end web development.</span>
                         </p>
                     </div>
