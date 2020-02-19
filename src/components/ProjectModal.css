@@ -2,6 +2,15 @@
     height: 90px;
 }
 
+.protoPic {
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.wirePic {
+    width: 80%;
+}
+
 .processContainer {
     margin: 3%;
 }

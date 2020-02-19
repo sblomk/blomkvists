@@ -12,6 +12,7 @@ import runningProcess from '../images/RunningProcess.png'
 import veloProcess from '../images/VeloProcess.png'
 import genderProcess from '../images/GenderProcess.png'
 import persuasiveProcess from '../images/PersuasiveProcess.png'
+import runningProto from '../images/runningPrototype.png'
 import bierProcess from '../images/BierProcess.png'
 import bachelorProcess from '../images/BachelorProcess.png'
 import ProjectModal1 from './ProjectModal1.jsx';
@@ -30,13 +31,14 @@ export class Projects extends Component {
             description: "none",
             keywords: "none",
             process: "none",
-            modal: "none"
+            modal: "none",
+            proto: "none"
         }
         this.details = this.details.bind(this)
         this.focusProject = React.createRef()
     }
 
-    details(id, name, desc, keys, proc, brief, modal){
+    details(id, name, desc, keys, proc, brief, modal, proto){
         this.setState({
             id: id,
             name: name,
@@ -44,7 +46,8 @@ export class Projects extends Component {
             keywords: keys,
             process: proc,
             brief: brief,
-            modal: modal
+            modal: modal,
+            proto: proto
         })
     }
 
@@ -77,7 +80,8 @@ export class Projects extends Component {
                     "
                     imgUrl={running}
                     details={this.details}
-                    modal="#modal1"/>
+                    modal="#modal1"
+                    proto={runningProto}/>
                 <ProjectCard 
                     id="2"
                     name="The Velo" 
@@ -183,7 +187,8 @@ export class Projects extends Component {
                     keywords={this.state.keywords}
                     process={this.state.process}
                     brief={this.state.brief}
-                    modal={this.state.modal}/>
+                    modal={this.state.modal}
+                    proto={this.state.proto}/>
                 <ProjectModal2
                     id="projectModal2"
                     name={this.state.name}

@@ -1,6 +1,6 @@
 import React from 'react'
 import './ProjectModal.css';
-
+import wireframes from '../images/wireframes.png'
 function ProjectModal1(props) {
         return (
                 <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal1">
@@ -27,8 +27,17 @@ function ProjectModal1(props) {
                              </p>
                             <p> <h6>Competative Analysis </h6><br></br>Here I looked at other apps commonly used while exercising, such as Runkeeper. 
                             One of its strengths for example was its lack of needed interaction. </p>
-                            <p> <h6>Goals &amp; Visions </h6><br></br>I learned things about blalal and experienced balalal when implementing blalal</p>
-                            <p> <h6>Prototyping </h6><br></br>I learned things about blalal and experienced balalal when implementing blalal</p>
+                            <p> <h6>Goals &amp; Visions </h6><br></br>Goal to make it easier to use Spotify Running with the vision: The design of Spotify Running should work instantly in synergy with your workout and flawlessly adapt to your own personal taste in music.</p>
+                            <p> <h6>Prototyping </h6><br></br>After some brainstorming and wireframing a final product design was decided. </p>
+                            <img className="wirePic" src={wireframes} alt=""></img>
+                            <p>To be able to test the new design on users, a high fidelity interactive prototype was developed using the 
+                                Just In Mind prototyping tool.</p>
+                            <img className="protoPic" src={props.proto} alt=""></img>
+                            <p>In the final design the music adapts dynamically to your tempo while running. And before you start you get to 
+                                combine several playlists into a running mix, which will be used during this session. The ability to lock a 
+                                certain tempo was also conceptualized and would be turned on and off by tapping the phone, much like interaction 
+                                with wireless headphones nowadays. These features would make music more tailored to you workout, as well as 
+                                eliminating interruptive interaction with the phone.   </p>
                             <p> <h6>User Tests </h6><br></br>Put users in a scenario and performing a 
                             think-aloud to catch potential design problems while using the prototype. Used Microsoft Reaction Card Method to test the desirability of the prototype. Short user interview.</p>
                             <br></br>

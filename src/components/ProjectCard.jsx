@@ -7,9 +7,9 @@ function ProjectCard(props) {
         <>
             <div className="projectCard col-md-5" style={{ padding: '2%' }}>
                 <div className="cardImgContainer">
-                    <img src={props.imgUrl} className="cardImg latest d-block w-100" alt="" style={{ backgroundColor: "#ebfcf1", cursor: "pointer" }} onClick={() => props.details(props.id,props.name, props.fullDescription, props.keywords, props.process, props.brief,props.modal)}/>
+                    <img src={props.imgUrl} className="cardImg latest d-block w-100" alt="" style={{ backgroundColor: "#ebfcf1", cursor: "pointer" }} onClick={() => props.details(props.id,props.name, props.fullDescription, props.keywords, props.process, props.brief,props.modal, props.proto)}/>
                     <div className="middle">
-                        <button onClick={() => props.details(props.id, props.name, props.fullDescription, props.keywords, props.process, props.brief, props.modal)} className="cardBtn btn" data-toggle="modal" data-target={props.modal}>More »</button>
+                        <button onClick={() => props.details(props.id, props.name, props.fullDescription, props.keywords, props.process, props.brief, props.modal, props.proto)} className="cardBtn btn" data-toggle="modal" data-target={props.modal}>More »</button>
                     </div>
                 </div>
                 <div style={{ height: '245px', overflow: 'hidden', paddingLeft: '1%', paddingRight: '1%' }}>
