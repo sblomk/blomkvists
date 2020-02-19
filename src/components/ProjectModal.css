@@ -3,12 +3,30 @@
 }
 
 .protoPic {
-    width: 80%;
+    width: 90%;
     margin-bottom: 2%;
 }
 
 .wirePic {
-    width: 80%;
+    width: 90%;
+}
+
+.foggPic {
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.mapPic {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 3%;
+    object-fit: cover;
+}
+
+.typePic {
+    width: 90%;
+    margin-bottom: 3%;
 }
 
 .processContainer {
@@ -26,4 +44,8 @@ h6 {
 
 .modal-content {
     padding: 3%;
+}
+
+.pop {
+    background-color: rgba(29, 67, 130, 0.1);
 }

@@ -22,11 +22,11 @@ function ProjectModal1(props) {
                             <p> <h6>User Research </h6><br></br>Interviewed potential users about how and why they use music while exercising, what their goal 
                             is and to identify pain points. One thing learned was that users listened to music to get a boost while exercising, but they 
                             thought that it was a hassle to get the music to adapt to their workout.</p>
+                            <p> <h6>Competative Analysis </h6><br></br>Here I looked at other apps commonly used while exercising, such as Runkeeper. 
+                            One of its strengths for example was its lack of needed interaction. </p>
                             <p> <h6>Personas </h6><br></br>Based on the user research we defined a target group and personas to help us develop design requirements, 
                             such as uninterruptive interaction.   
                              </p>
-                            <p> <h6>Competative Analysis </h6><br></br>Here I looked at other apps commonly used while exercising, such as Runkeeper. 
-                            One of its strengths for example was its lack of needed interaction. </p>
                             <p> <h6>Goals &amp; Visions </h6><br></br>Goal to make it easier to use Spotify Running with the vision: The design of Spotify Running should work instantly in synergy with your workout and flawlessly adapt to your own personal taste in music.</p>
                             <p> <h6>Prototyping </h6><br></br>After some brainstorming and wireframing a final product design was decided. </p>
                             <img className="wirePic" src={wireframes} alt=""></img>
@@ -40,9 +40,11 @@ function ProjectModal1(props) {
                                 eliminating interruptive interaction with the phone.   </p>
                             <p> <h6>User Tests </h6><br></br>Put users in a scenario and performing a 
                             think-aloud to catch potential design problems while using the prototype. Used Microsoft Reaction Card Method to test the desirability of the prototype. Short user interview.</p>
-                            <br></br>
                             <h4 className="font-weight-normal">What I Learned</h4>
-                            <p>I learned things about blalal and experienced balalal when implementing blalal</p>
+                            <p>Aside from learning more about the UX design process I also gained more experience on how to work in a group with several designers. 
+                                We were five people on the team and we had to divide the work appropriately based on interest and skill. 
+                                In developing new design ideas and then deciding which ideas to continue improving, communication and everyone 
+                                being on the same page was key.  </p>
                         </div>
                     </div>
                 </div>

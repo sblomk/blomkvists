@@ -13,7 +13,7 @@ function ProjectModal3(props) {
                         </button>
                         </div>
                         <div className="modal-body">
-                            <p>{props.brief}</p>
+                            <p className="lead">Depending on through which modality information is conveyed, we humans may perceive it differently.</p>
                             <h4 className="font-weight-normal">Process</h4>
                             <div className="processContainer">
                                 <img className="processPic" src={props.process} alt=""></img>

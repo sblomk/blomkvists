@@ -56,7 +56,7 @@ export class Projects extends Component {
             <>
             <div className="container">
             <hr ref={this.focusProject}/>
-                <h1 className="projecth1 font-weight-normal">Projects</h1>
+                <h1 className="projecth1 font-weight-normal">Selected Projects</h1>
             </div>
             <div className="container" id="projects">
                 <div className="row" style={{marginBottom: '50px'}}>
