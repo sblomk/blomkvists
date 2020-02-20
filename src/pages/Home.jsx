@@ -4,6 +4,8 @@ import Footer from '../components/Footer.jsx';
 import './Home.css';
 import { Projects } from '../components/Projects';
 import { HomeIntro } from '../components/HomeIntro';
+import { AboutMe } from '../components/AboutMe';
+import { CurrentWork } from '../components/CurrentWork';
 
 export class Home extends Component {
     constructor(props){
@@ -29,6 +31,8 @@ export class Home extends Component {
             <Navbar />
             <HomeIntro scrollToProjects={this.scrollToProjects}/>
             <Projects ref={this.projects}/>
+            <CurrentWork/>
+            <AboutMe/>
             <Footer />
             </>
         )

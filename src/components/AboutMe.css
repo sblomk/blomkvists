@@ -1,0 +1,23 @@
+.intro{
+    margin-top: 110px;
+}
+.introImg {
+    border-radius: 50%;
+  }
+
+.deedsterText{
+    padding-top: 200px;
+}
+
+.eduText{
+    padding-top: 10%;
+}
+
+.aboutMeRow {
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.eduPic {
+    margin-top: 5%;
+}

@@ -2,4 +2,30 @@
     width: 60px;
     height: 50px;
     margin-top: 15px;
-  }
+}
+.page-footer{
+  background-color: #1d4382;
+  height: 20%;
+  padding-top: 0.5%;
+}
+
+.footer-copyright{
+  color: whitesmoke;
+}
+
+.linkedin{
+  color: white;
+  font-size: 120%;
+}
+
+.linkedin:hover{
+  color: white;
+}
+
+.footlead{
+  font-size: 130%;
+  margin-top: 2%;
+  color: white;
+}
+
+

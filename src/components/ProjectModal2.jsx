@@ -19,6 +19,20 @@ function ProjectModal2(props) {
                         <div className="modal-body">
                             <p className="lead">In this <span className="blue font-weight-bolder">UX design project</span> we developed a concept of a smart navigation device for bicycles. 
                                 Presenting the Velo, a circular module with a matte screen, an interactive turning wheel and a ring of green LED-lights around it.</p>
+                            <div className="row introinfo">
+                                <div className="col-md-6">
+                                <p> <h6 className="info">My Role</h6>
+                                UX Designer &amp; Researcher</p>
+                                </div>
+                                <div className="col-md-3">
+                                <p> <h6 className="info">Year</h6>
+                                2017</p>
+                                </div>
+                                <div className="col-md-3">
+                                <p> <h6 className="info">Done at </h6>
+                                KTH</p>
+                                </div>
+                            </div>
                             <h4 className="font-weight-normal">Process</h4>
                             <div className="processContainer">
                                 <img className="processPic" src={props.process} alt=""></img>
@@ -58,7 +72,8 @@ function ProjectModal2(props) {
                             <h4 className="font-weight-normal">What I learned</h4>
                             <p>During this project I got better at the ideation phase, learning and applying new brainstorming methods which really 
                                 proved useful for coming up with new design solutions. I also found these methods being good team building exercises 
-                                and helped us communicate better. Further I got better at developing interactive prototypes.  </p>
+                                and helped us communicate better. Further I got better at developing interactive prototypes. This is important to be able to test
+                                the design on users and gain feedback on which improvements can be made.  </p>
                         </div>
                     </div>
                 </div>

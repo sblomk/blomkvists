@@ -3,18 +3,30 @@
 }
 
 .protoPic {
-    width: 90%;
-    margin-bottom: 2%;
+    width: 100%;
+    margin-bottom: 4%;
+    margin-top: 3%;
 }
 
 .wirePic {
     width: 90%;
 }
 
+.moodPic {
+    width: 90%;
+    margin-bottom: 4%;
+}
+
 .foggPic {
-    width: 60%;
+    width: 50%;
     margin-top: 2%;
     margin-bottom: 4%;
+    margin-left: 5%;
+}
+
+.sitePic {
+    width: 95%;
+    margin-left: 2%;
 }
 
 .mapPic {
@@ -22,6 +34,11 @@
     height: 300px;
     margin-bottom: 3%;
     object-fit: cover;
+}
+
+.hifiPic {
+    width: 90%;
+    margin-bottom: 3%;
 }
 
 .typePic {
@@ -40,6 +57,14 @@
 h6 {
     margin-bottom: -3%;
     color: #1d4382;
+}
+
+.info{
+    margin-bottom: 0%;
+}
+
+.introinfo {
+    margin-bottom: 3%;
 }
 
 .modal-content {
