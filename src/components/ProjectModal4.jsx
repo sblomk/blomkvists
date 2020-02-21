@@ -55,7 +55,8 @@ function ProjectModal4(props) {
                         <img className="sitePic" src={site} alt=""></img>
                         <p> <h6>User Tests </h6><br></br>To determine any difference in persuasive effect between the two websites a between-subject user test 
                         was conducted. Before and after using the site, users was surveyed about their attitudes towards sustainable behavior. The results was a bit mixed, 
-                        but in the end the website using both visual and sound feedback was concluded to have the greatest persuasive influence.</p>
+                        but in the end the website using both visual and sound feedback was concluded to have the greatest persuasive influence. Users of that website was more 
+                        inclined and felt more motivated to adopt new sustainable behaviors.</p>
                         <h4 className="font-weight-normal">What I learned</h4>
                         <p>This is one of the projects that really sparked my interest in psychology and behavior, and how they can be influenced through UX design. 
                             During this project I further increased my knowledge of persuasion tactics, usable on digital platforms, which in this instance was used to 

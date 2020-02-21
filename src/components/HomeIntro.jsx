@@ -27,6 +27,8 @@ export class HomeIntro extends Component {
                         </p>
                     </div>
                 </div>
+                <div id="projects"></div>
+                <hr/>
             </div>
             </div>
         )

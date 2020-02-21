@@ -1,10 +1,11 @@
-.intro{
-    margin-bottom: 8%;
-}
 .introImg {
     border-radius: 50%;
   }
 
 .introText{
     padding-top: 200px;
+}
+
+#projects {
+    margin-bottom: 10%;
 }

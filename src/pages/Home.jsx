@@ -30,8 +30,8 @@ export class Home extends Component {
             <>
             <Navbar />
             <HomeIntro scrollToProjects={this.scrollToProjects}/>
-            <Projects ref={this.projects}/>
             <CurrentWork/>
+            <Projects ref={this.projects}/>
             <AboutMe/>
             <Footer />
             </>

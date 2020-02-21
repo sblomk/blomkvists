@@ -12,7 +12,7 @@ export class CurrentWork extends Component {
                 <h1 className="projecth1 font-weight-normal">Current Project</h1>
                 <div className="aboutMeRow row featurette">  
                     <div className="deedsterText col-md-7">
-                        <h2 className="featurette-heading font-weight-light">Currently doing my Master Thesis at Deedster!</h2>
+                        <h2 className="featurette-heading font-weight-light">I'm doing my Master Thesis at Deedster!</h2>
                         <p className="lead"> I'm working on how to increase user engagement with push notifications.<span className="blue font-weight-bolder"> My mission is to design 
                         push-strategies to enhance the User Experience to persuade and motivate increased engagement with the Deedster app</span>. 
                         I will be conducting multivariate testing and an engagement analysis from user behavioral data 

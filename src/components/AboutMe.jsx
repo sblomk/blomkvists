@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './AboutMe.css';
 import edu from '../images/edu.png';
+import skills from '../images/skills.png';
 
 
 export class AboutMe extends Component {
@@ -22,6 +23,48 @@ export class AboutMe extends Component {
                         <br></br>
                         <h4 className="font-weight-normal">KTH, Royal Institute of Technology | 2014 - 2017</h4>
                         <p className="lead">BS Media Technology - <span className="blue font-weight-bolder">Interaction Design</span> track</p>
+                    </div>
+                </div>
+                <div className="skillsRow row featurette">  
+                    <div className="first col-md-4">
+                        <h2 className="featurette-heading font-weight-light">Skills</h2>
+                        <h4 className="font-weight-normal">UX methods</h4>
+                        <p className="lead">
+                        Interviews<br/>
+                        Surveys<br/>
+                        Contextual inquiry<br/>
+                        Competitive analysis<br/>
+                        Personas<br/>
+                        User stories<br/>
+                        Defining requirements<br/>
+                        Wireframing<br/>
+                        Prototyping<br/>
+                        Usability testing<br/>
+                        Heuristic evaluation<br/>
+                        A/B testing<br/>
+                        Multivariate Testing<br/>
+                        </p>
+                    </div>
+                    <div className="skillText col-md-4">
+                    <h2 className="featurette-heading font-weight-light"></h2>
+                        <h4 className="font-weight-normal">Development</h4>
+                        <p className="lead">
+                        HTML<br/>
+                        CSS<br/>
+                        Javascript<br/>
+                        JQuery<br/>
+                        React.js<br/>
+                        </p>
+                        <br></br>
+                        <h4 className="font-weight-normal">Other</h4>
+                        <p className="lead">
+                        Persuasive design and communication<br/>
+                        Information architecture<br/>
+                        Data analytics<br/>
+                        </p>
+                    </div>
+                    <div className="eduPic col-md-3">
+                    <img className="skillPic d-block w-100" src={skills} alt=""></img>
                     </div>
                 </div>
             </div>

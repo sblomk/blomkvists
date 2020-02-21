@@ -44,7 +44,7 @@ function ProjectModal2(props) {
                             <img className="mapPic" src={map} alt=""></img>
                             <p>Among other things, we learned that people bicycled because it was the fastest alternative and that it offered a lot of freedom and exercise. Some pain 
                                 points was the availability of air pumps and bike lanes in the city.  </p>
-                            <p> <h6>Competative Analysis </h6><br></br>
+                            <p> <h6>UX Competative Analysis </h6><br></br>
                             Here I looked at a number of bike gadgets and how they were designed to either be used on a bicycle or 
                             attached to it. Some examples are the Hövding-helmet, lightweight portable pumps, and navigational devices.</p>
                             <p> <h6>Personas and Brainstorming </h6><br></br>

@@ -55,45 +55,10 @@ export class Projects extends Component {
         return (
             <>
             <div className="container">
-            <hr ref={this.focusProject}/>
                 <h1 className="projecth1 font-weight-normal">Selected Projects</h1>
             </div>
-            <div className="container" id="projects">
+            <div className="container">
                 <div className="row" style={{marginBottom: '50px'}}>
-                <ProjectCard 
-                    id="2"
-                    name="The Velo" 
-                    description="Concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
-                    an interactive turning wheel and a ring of green LED-lights around it."
-                    process={veloProcess}
-                    keywords="UX design, User Research, Prototyping"
-                    fullDescription="In this project we developed a concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
-                    an interactive turning wheel and a ring of green LED-lights around it.  It allows you to search for a location, and then show you the way to it through the 
-                    ring of LEDs. Or as we like to call it, the compass ring. This can be done either directly by pre-set locations on the Velo, or by searching manually in the 
-                    accompanying smartphone app. We started out by conductiong fields studies where we interviewed bikers on the street. Out of our responses, the main factor for choosing the 
-                    bike was that it was quicker to get through city, that you don’t have to adapt to the public transportation timetables, and that it was a more pleasant ride overall.
-                    From these results we created personas to further aid us in the design process."
-                    imgUrl={veloIcon}
-                    details={this.details}
-                    modal="#modal2"/>
-                <ProjectCard 
-                    id="4"
-                    name="Carbon Budgets"
-                    description="By developing a website in React.js and conducting user tests I explored how the combination of sound and visual feedback 
-                    influences persuasiveness."
-                    process={persuasiveProcess}
-                    keywords="Web Development, User Tests, Persuasive design"
-                    fullDescription="In this project we explored how to visualize a carbon budget to raise awareness and motivate behavioral change. 
-                    Our design process ended up in a website where users can explore how long their carbon budget will last based on their carbon emitting activities. 
-                    This is done by the user entering information about these activities and the carbon budget will then be displayed in a graph over then user’s lifetime. 
-                    The final design is focused on user friendliness, at the cost of precision in the presented result. Mostly due to the use of non scientific units 
-                    in both the entering of information by the user and the end result. The key aspect of the design aimed towards raising awareness is the direct 
-                    feedback in the graph and the top menu when changing the inputted information, showing the user how much carbon certain behaviors emits and how fast 
-                    it depletes the budget. This may result in negative valence which is prone to raise awareness but, on the other hand, also decrease user engagement. 
-                    This is by some extent combated by an overall positive design of the website and the use of easily understandable metrics to easen engagement with the site."
-                    imgUrl={carbonIcon}
-                    details={this.details}
-                    modal="#modal4"/>
                 <ProjectCard 
                     id="1"
                     name="Spotify Running 2.0"
@@ -116,6 +81,40 @@ export class Projects extends Component {
                     details={this.details}
                     modal="#modal1"
                     proto={runningProto}/>
+                <ProjectCard 
+                    id="4"
+                    name="Carbon Budgets"
+                    description="By developing a website in React.js and conducting user tests I explored how the combination of sound and visual feedback 
+                    influences persuasiveness."
+                    process={persuasiveProcess}
+                    keywords="Web Development, User Tests, Persuasive design"
+                    fullDescription="In this project we explored how to visualize a carbon budget to raise awareness and motivate behavioral change. 
+                    Our design process ended up in a website where users can explore how long their carbon budget will last based on their carbon emitting activities. 
+                    This is done by the user entering information about these activities and the carbon budget will then be displayed in a graph over then user’s lifetime. 
+                    The final design is focused on user friendliness, at the cost of precision in the presented result. Mostly due to the use of non scientific units 
+                    in both the entering of information by the user and the end result. The key aspect of the design aimed towards raising awareness is the direct 
+                    feedback in the graph and the top menu when changing the inputted information, showing the user how much carbon certain behaviors emits and how fast 
+                    it depletes the budget. This may result in negative valence which is prone to raise awareness but, on the other hand, also decrease user engagement. 
+                    This is by some extent combated by an overall positive design of the website and the use of easily understandable metrics to easen engagement with the site."
+                    imgUrl={carbonIcon}
+                    details={this.details}
+                    modal="#modal4"/>
+                <ProjectCard 
+                    id="2"
+                    name="The Velo" 
+                    description="Concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
+                    an interactive turning wheel and a ring of green LED-lights around it."
+                    process={veloProcess}
+                    keywords="UX design, User Research, Prototyping"
+                    fullDescription="In this project we developed a concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
+                    an interactive turning wheel and a ring of green LED-lights around it.  It allows you to search for a location, and then show you the way to it through the 
+                    ring of LEDs. Or as we like to call it, the compass ring. This can be done either directly by pre-set locations on the Velo, or by searching manually in the 
+                    accompanying smartphone app. We started out by conductiong fields studies where we interviewed bikers on the street. Out of our responses, the main factor for choosing the 
+                    bike was that it was quicker to get through city, that you don’t have to adapt to the public transportation timetables, and that it was a more pleasant ride overall.
+                    From these results we created personas to further aid us in the design process."
+                    imgUrl={veloIcon}
+                    details={this.details}
+                    modal="#modal2"/>
                 <ProjectCard 
                     id="3"
                     name="GendeRadar" 
@@ -214,6 +213,7 @@ export class Projects extends Component {
                     brief={this.state.brief}
                     modal={this.state.modal}/>
                 </div>
+                <div id="about"></div>
                 <hr></hr>
             </div>
             </>

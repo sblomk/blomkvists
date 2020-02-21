@@ -15,9 +15,33 @@
 
 .aboutMeRow {
     margin-top: 2%;
-    margin-bottom: 10%;
 }
 
 .eduPic {
     margin-top: 5%;
+}
+
+.skillPic {
+    height: 70%;
+}
+
+.skillText {
+    margin-top: 3.5%;
+}
+
+#about{
+    margin-bottom: 10%;
+}
+
+.first {
+    margin-left: 5%;
+}
+
+.skillsRow{
+    margin-bottom: 15%;
+}
+
+.aboutMeRow {
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
