@@ -38,14 +38,13 @@ export class Projects extends Component {
         this.focusProject = React.createRef()
     }
 
-    details(id, name, desc, keys, proc, brief, modal, proto){
+    details(id, name, desc, keys, proc, modal, proto){
         this.setState({
             id: id,
             name: name,
             description: desc,
             keywords: keys,
             process: proc,
-            brief: brief,
             modal: modal,
             proto: proto
         })
@@ -64,19 +63,8 @@ export class Projects extends Component {
                     name="Spotify Running 2.0"
                     description="Redesigning spotify's 'Running' feature using the Double Diamond in the UX design process. New ways of interacting with the application was developed
                     as well as new functionality."
-                    brief="Interaction with your phone during exercising can be troublesome. This UX design project set out to make this interaction easier, either by
-                    introducing new ways of interacting or adding functionalities which removes the need to even interact with the application in the first place."
                     process={runningProcess}
                     keywords="UX design, Double Diamond, User Research, Hi-fi Prototyping, User Tests"
-                    fullDescription="The Double Diamond design process was utilized which consists of four phases. First the discovery phase where we studied users, 
-                    through interviews and surveys, and conducted a competative analysis of the field. The results of the first phase was then used in the second 
-                    (define) phase where we created personas and scenarios to define design requirements and formulate our vision statement. Then we enter the develop 
-                    phase where we started designing prototypes based on what we have learned in the previous phases. These prototypes was evaluated through user tests 
-                    and based on that feedback we decided on a final prototype which we the finalized in last (deliver) phase. To minimize the need to interact with the 
-                    application we implemented functionality which shapes the music to your running, in terms of tempo and mood. This would be based on sensor data from 
-                    the phone. New functionality to lock the tempo, if  the user wishes to keep a certain tempo for a while, was introduced. To lock the tempo, the user 
-                    just had to tap the phone, thus making interaction easier.
-                    "
                     imgUrl={running}
                     details={this.details}
                     modal="#modal1"
@@ -88,14 +76,6 @@ export class Projects extends Component {
                     influences persuasiveness."
                     process={persuasiveProcess}
                     keywords="Web Development, User Tests, Persuasive design"
-                    fullDescription="In this project we explored how to visualize a carbon budget to raise awareness and motivate behavioral change. 
-                    Our design process ended up in a website where users can explore how long their carbon budget will last based on their carbon emitting activities. 
-                    This is done by the user entering information about these activities and the carbon budget will then be displayed in a graph over then user’s lifetime. 
-                    The final design is focused on user friendliness, at the cost of precision in the presented result. Mostly due to the use of non scientific units 
-                    in both the entering of information by the user and the end result. The key aspect of the design aimed towards raising awareness is the direct 
-                    feedback in the graph and the top menu when changing the inputted information, showing the user how much carbon certain behaviors emits and how fast 
-                    it depletes the budget. This may result in negative valence which is prone to raise awareness but, on the other hand, also decrease user engagement. 
-                    This is by some extent combated by an overall positive design of the website and the use of easily understandable metrics to easen engagement with the site."
                     imgUrl={carbonIcon}
                     details={this.details}
                     modal="#modal4"/>
@@ -106,12 +86,6 @@ export class Projects extends Component {
                     an interactive turning wheel and a ring of green LED-lights around it."
                     process={veloProcess}
                     keywords="UX design, User Research, Prototyping"
-                    fullDescription="In this project we developed a concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
-                    an interactive turning wheel and a ring of green LED-lights around it.  It allows you to search for a location, and then show you the way to it through the 
-                    ring of LEDs. Or as we like to call it, the compass ring. This can be done either directly by pre-set locations on the Velo, or by searching manually in the 
-                    accompanying smartphone app. We started out by conductiong fields studies where we interviewed bikers on the street. Out of our responses, the main factor for choosing the 
-                    bike was that it was quicker to get through city, that you don’t have to adapt to the public transportation timetables, and that it was a more pleasant ride overall.
-                    From these results we created personas to further aid us in the design process."
                     imgUrl={veloIcon}
                     details={this.details}
                     modal="#modal2"/>
@@ -122,25 +96,6 @@ export class Projects extends Component {
                     inequality looks on a world wide scale."
                     process={genderProcess}
                     keywords="Information Architecture, Front-end Development, Heuristic Evaluation"
-                    fullDescription="Gender inequality is a huge problem in the world that hinders the development of a globalized, equal society.
-                    The united nations has been working to tackle this problem in various ways. One of their measurements is the
-                    gender inequality index. This index is based upon different variables that indicates how developed a country is
-                    when it comes to equality.
-                    This project is about visualizing these variables and to show how gender inequality looks on a world wide
-                    scale. The service itself is directed towards people without a lot of knowledge about these variables and how
-                    gender inequality is measured. We tried to visualize the data provided from the united nations in the most
-                    simple way possible.
-                    Here is how the service works:
-                    When a user first enters the service, a world map is shown with the gender inequality index displayed. The
-                    different colors show different values and a user can hover over a country to see the exact value for a specific
-                    year. The year can be changed in a slider just beneath the world map. To the right, there is a tree that can
-                    shows the different variables in different nodes. This is used to filter the map and its content on variables. Let’
-                    s say a user want to look at how the Female Labour index looks like. Then one simply clicks the node and the
-                    entire map will show details on that specific variable as well as information about what the variable actually
-                    measures Just beneath the tree.
-                    Furthermore, by clicking a country, a user can get information about the specific variable for the specific
-                    country and its development over time. If a country is not clicked, the details will show how the variable has
-                    changed for the entire world over time."
                     imgUrl={genderIcon}
                     details={this.details}
                     modal="#modal3" />
