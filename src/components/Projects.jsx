@@ -144,7 +144,7 @@ export class Projects extends Component {
                     imgUrl={genderIcon}
                     details={this.details}
                     modal="#modal3" />
-                {/* <ProjectCard 
+                {/*<ProjectCard 
                     id="5"
                     name="Social Media Use" 
                     description="Bachelor thesis exploring how and why users of social media distribute their activity over several of these at the same time."
