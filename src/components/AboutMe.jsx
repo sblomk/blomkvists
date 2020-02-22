@@ -59,6 +59,7 @@ export class AboutMe extends Component {
                         <h4 className="font-weight-normal">Other</h4>
                         <p className="lead">
                         Persuasive design and communication<br/>
+                        Behavior change techniques<br/>
                         Information architecture<br/>
                         Data analytics<br/>
                         </p>

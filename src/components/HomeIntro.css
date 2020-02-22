@@ -9,3 +9,38 @@
 #projects {
     margin-bottom: 10%;
 }
+
+.linkedin {
+    width: 200%;
+}
+
+.linked {
+    margin-top: 1%;
+}
+
+.linkeda {
+    margin-left: 4%;
+    font-size: 120%;
+    color: #1d4382;
+}
+
+.linkeda:hover {
+    color: #1d4382;
+}
+
+.introlead {
+    margin-bottom: 18%;
+}
+
+.atmail {
+    margin-top: -40%;
+    font-size: 250%;
+}
+
+.maildiv {
+    margin-top: 0.8%;
+}
+
+.atdiv {
+    margin-left: 3%;
+}

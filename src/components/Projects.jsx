@@ -206,6 +206,7 @@ export class Projects extends Component {
                     modal={this.state.modal}/>
                 <ProjectModal4
                     id="projectModal4"
+                    
                     name={this.state.name}
                     fullDescription={this.state.description}
                     keywords={this.state.keywords}
