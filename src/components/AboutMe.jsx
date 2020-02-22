@@ -46,7 +46,6 @@ export class AboutMe extends Component {
                         </p>
                     </div>
                     <div className="skillText col-md-4">
-                    <h2 className="featurette-heading font-weight-light"></h2>
                         <h4 className="font-weight-normal">Development</h4>
                         <p className="lead">
                         HTML<br/>
