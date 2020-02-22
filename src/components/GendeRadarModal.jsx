@@ -3,6 +3,7 @@ import './ProjectModal.css';
 import gsite from '../images/genderSite.png'
 import lofi from '../images/genderlofiwire.jpg'
 import hifi from '../images/genderhifiwire.png'
+import genderProcess from '../images/GenderProcess.png'
 
 
 function GendeRadarModal(props) {
@@ -36,7 +37,7 @@ function GendeRadarModal(props) {
                             </div>
                             <h4 className="font-weight-normal">Process</h4>
                             <div className="processContainer">
-                                <img className="processPic" src={props.process} alt=""></img>
+                                <img className="processPic" src={genderProcess} alt=""></img>
                             </div>
                             <h6>Research </h6><br></br>First a complete understanding of how the inequality index is calculated and what variables it is based on was essential. 
                             <p> After that I could start researching about information architecture and visualisation, early on the mantra “overview first, zoom and filter, 

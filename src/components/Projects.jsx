@@ -8,11 +8,6 @@ import genderIcon from '../images/genderIcon.JPG'
 import bachelorIcon from '../images/KTH.png'
 import veloIcon from '../images/veloIcon.png'
 import running from '../images/spotifyRunning.jpg'
-import runningProcess from '../images/RunningProcess.png'
-import veloProcess from '../images/VeloProcess.png'
-import genderProcess from '../images/GenderProcess.png'
-import persuasiveProcess from '../images/PersuasiveProcess.png'
-import runningProto from '../images/runningPrototype.png'
 import bierProcess from '../images/BierProcess.png'
 import bachelorProcess from '../images/BachelorProcess.png'
 import SpotifyRunningModal from './SpotifyRunningModal.jsx';
@@ -30,23 +25,19 @@ export class Projects extends Component {
             brief: "none",
             description: "none",
             keywords: "none",
-            process: "none",
             modal: "none",
-            proto: "none"
         }
         this.details = this.details.bind(this)
         this.focusProject = React.createRef()
     }
 
-    details(id, name, desc, keys, proc, modal, proto){
+    details(id, name, desc, keys, modal, proto){
         this.setState({
             id: id,
             name: name,
             description: desc,
             keywords: keys,
-            process: proc,
             modal: modal,
-            proto: proto
         })
     }
 
@@ -63,18 +54,15 @@ export class Projects extends Component {
                     name="Spotify Running 2.0"
                     description="Redesigning spotify's 'Running' feature using the Double Diamond in the UX design process. New ways of interacting with the application was developed
                     as well as new functionality."
-                    process={runningProcess}
                     keywords="UX design, Double Diamond, User Research, Hi-fi Prototyping, User Tests"
                     imgUrl={running}
                     details={this.details}
-                    modal="#modal1"
-                    proto={runningProto}/>
+                    modal="#modal1"/>
                 <ProjectCard 
                     id="4"
                     name="Carbon Budgets"
                     description="By developing a website in React.js and conducting user tests I explored how the combination of sound and visual feedback 
                     influences persuasiveness."
-                    process={persuasiveProcess}
                     keywords="Web Development, User Tests, Persuasive design"
                     imgUrl={carbonIcon}
                     details={this.details}
@@ -84,7 +72,6 @@ export class Projects extends Component {
                     name="The Velo" 
                     description="Concept of a smart navigation device for bicycles. Presenting the Velo, a circular module with a matte screen, 
                     an interactive turning wheel and a ring of green LED-lights around it."
-                    process={veloProcess}
                     keywords="UX design, User Research, Prototyping"
                     imgUrl={veloIcon}
                     details={this.details}
@@ -94,7 +81,6 @@ export class Projects extends Component {
                     name="GendeRadar" 
                     description="This project is about visualizing the variables which the gender inequality index is built upon and to show how gender 
                     inequality looks on a world wide scale."
-                    process={genderProcess}
                     keywords="Information Architecture, Front-end Development, Heuristic Evaluation"
                     imgUrl={genderIcon}
                     details={this.details}

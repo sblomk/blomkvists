@@ -2,6 +2,8 @@ import React from 'react'
 import './ProjectModal.css';
 import wireframes from '../images/wireframes.png'
 import storm from '../images/runningStrom.png'
+import runningProcess from '../images/RunningProcess.png'
+import runningProto from '../images/runningPrototype.png'
 
 
 function SpotifyRunningModal(props) {
@@ -34,7 +36,7 @@ function SpotifyRunningModal(props) {
                             </div>
                             <h4 className="font-weight-normal">Process</h4>
                             <div className="processContainer">
-                                <img className="processPic" src={props.process} alt=""></img>
+                                <img className="processPic" src={runningProcess} alt=""></img>
                             </div>
                             <h6>User Research </h6><br></br><p> I conducted semi-structured interviews with potential users about how and why they use music while exercising, 
                             what their goal is and to identify pain points. One thing learned was that users listened to music to get a boost while exercising, but they  
@@ -51,7 +53,7 @@ function SpotifyRunningModal(props) {
                             <img className="wirePic" src={wireframes} alt=""></img>
                             <p>To be able to test the new design on users, a high fidelity interactive prototype was developed using the 
                                 Just In Mind prototyping tool.</p>
-                            <img className="protoPic" src={props.proto} alt=""></img>
+                            <img className="protoPic" src={runningProto} alt=""></img>
                             <p>In the final design the music adapts dynamically to your tempo while running. And before you start you get to 
                                 combine several playlists into a running mix, which will be used during this session. The ability to lock a 
                                 certain tempo was also conceptualized and would be turned on and off by tapping the phone, much like interaction 

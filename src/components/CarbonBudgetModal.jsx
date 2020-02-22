@@ -3,6 +3,7 @@ import './ProjectModal.css';
 import fogg from '../images/Fogg.jpg'
 import site from '../images/carbonSite.png'
 import principles from '../images/principles.png'
+import persuasiveProcess from '../images/PersuasiveProcess.png'
 
 function CarbonBudgetModal(props) {
         return (
@@ -36,7 +37,7 @@ function CarbonBudgetModal(props) {
                         </div>
                         <h4 className="font-weight-normal">Process</h4>
                         <div className="processContainer">
-                            <img className="processPic" src={props.process} alt=""></img>
+                            <img className="processPic" src={persuasiveProcess} alt=""></img>
                         </div>
                         <h6>Research </h6><br></br>
                         <p> To create the website, I first had to research behavior change techniques and persuasive design and technologies. Some 

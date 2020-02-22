@@ -4,6 +4,7 @@ import map from '../images/veloMap.jpg'
 import brain from '../images/brainstormingVelo.jpg'
 import app from '../images/veloApp.png'
 import velo from '../images/veloType.png'
+import veloProcess from '../images/VeloProcess.png'
 
 function VeloModal(props) {
         return (
@@ -35,7 +36,7 @@ function VeloModal(props) {
                             </div>
                             <h4 className="font-weight-normal">Process</h4>
                             <div className="processContainer">
-                                <img className="processPic" src={props.process} alt=""></img>
+                                <img className="processPic" src={veloProcess} alt=""></img>
                             </div>
                             <h6>Research </h6><br></br>
                             <p> To identify why people chose the bicycle as their mode of transportation and potential pain points, interviews with bicyclists was held. 
