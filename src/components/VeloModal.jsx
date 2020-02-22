@@ -5,7 +5,7 @@ import brain from '../images/brainstormingVelo.jpg'
 import app from '../images/veloApp.png'
 import velo from '../images/veloType.png'
 
-function ProjectModal2(props) {
+function VeloModal(props) {
         return (
                 <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal2">
                 <div className="modal-dialog modal-lg">
@@ -81,4 +81,4 @@ function ProjectModal2(props) {
         )
 }
 
-export default ProjectModal2
+export default VeloModal

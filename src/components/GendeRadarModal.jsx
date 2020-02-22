@@ -5,7 +5,7 @@ import lofi from '../images/genderlofiwire.jpg'
 import hifi from '../images/genderhifiwire.png'
 
 
-function ProjectModal3(props) {
+function GendeRadarModal(props) {
         return (
                 <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal3">
                 <div className="modal-dialog modal-lg">
@@ -77,4 +77,4 @@ function ProjectModal3(props) {
         )
 }
 
-export default ProjectModal3
+export default GendeRadarModal

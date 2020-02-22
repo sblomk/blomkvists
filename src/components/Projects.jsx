@@ -15,10 +15,10 @@ import persuasiveProcess from '../images/PersuasiveProcess.png'
 import runningProto from '../images/runningPrototype.png'
 import bierProcess from '../images/BierProcess.png'
 import bachelorProcess from '../images/BachelorProcess.png'
-import ProjectModal1 from './ProjectModal1.jsx';
-import ProjectModal2 from './ProjectModal2.jsx';
-import ProjectModal3 from './ProjectModal3.jsx';
-import ProjectModal4 from './ProjectModal4.jsx';
+import SpotifyRunningModal from './SpotifyRunningModal.jsx';
+import GendeRadarModal from './GendeRadarModal.jsx';
+import CarbonBudgetModal from './CarbonBudgetModal.jsx';
+import VeloModal from './VeloModal.jsx';
 
 
 export class Projects extends Component {
@@ -179,7 +179,7 @@ export class Projects extends Component {
                     purpose for people eager to drink in a park. Some technologies used to create this was Google Maps API, Onsen UI, JavaScript, HTML, and CSS"
                     imgUrl={bierIcon}
                     details={this.details}/> */}
-                <ProjectModal1
+                <SpotifyRunningModal
                     id="projectModal1"
                     name={this.state.name}
                     fullDescription={this.state.description}
@@ -188,7 +188,7 @@ export class Projects extends Component {
                     brief={this.state.brief}
                     modal={this.state.modal}
                     proto={this.state.proto}/>
-                <ProjectModal2
+                <VeloModal
                     id="projectModal2"
                     name={this.state.name}
                     fullDescription={this.state.description}
@@ -196,7 +196,7 @@ export class Projects extends Component {
                     process={this.state.process}
                     brief={this.state.brief}
                     modal={this.state.modal}/>
-                <ProjectModal3
+                <GendeRadarModal
                     id="projectModal3"
                     name={this.state.name}
                     fullDescription={this.state.description}
@@ -204,7 +204,7 @@ export class Projects extends Component {
                     process={this.state.process}
                     brief={this.state.brief}
                     modal={this.state.modal}/>
-                <ProjectModal4
+                <CarbonBudgetModal
                     id="projectModal4"
                     name={this.state.name}
                     fullDescription={this.state.description}

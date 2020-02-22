@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
 import './Home.css';
+import Navbar from '../components/Navbar.jsx';
 import { Projects } from '../components/Projects';
 import { HomeIntro } from '../components/HomeIntro';
 import { AboutMe } from '../components/AboutMe';
 import { CurrentWork } from '../components/CurrentWork';
+import { Footer } from '../components/Footer';
 
 export class Home extends Component {
     constructor(props){
@@ -33,7 +33,7 @@ export class Home extends Component {
             <CurrentWork/>
             <Projects ref={this.projects}/>
             <AboutMe/>
-            <Footer />
+            <Footer/>
             </>
         )
     }

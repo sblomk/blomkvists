@@ -4,7 +4,7 @@ import fogg from '../images/Fogg.jpg'
 import site from '../images/carbonSite.png'
 import principles from '../images/principles.png'
 
-function ProjectModal4(props) {
+function CarbonBudgetModal(props) {
         return (
                 <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal4">
                 <div className="modal-dialog modal-lg">
@@ -73,4 +73,4 @@ function ProjectModal4(props) {
         )
 }
 
-export default ProjectModal4
+export default CarbonBudgetModal

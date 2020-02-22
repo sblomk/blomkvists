@@ -4,7 +4,7 @@ import wireframes from '../images/wireframes.png'
 import storm from '../images/runningStrom.png'
 
 
-function ProjectModal1(props) {
+function SpotifyRunningModal(props) {
         return (
                 <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal1">
                 <div className="modal-dialog modal-lg">
@@ -71,4 +71,4 @@ function ProjectModal1(props) {
         )
 }
 
-export default ProjectModal1
+export default SpotifyRunningModal
