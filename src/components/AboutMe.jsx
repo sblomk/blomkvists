@@ -31,10 +31,12 @@ export class AboutMe extends Component {
                         <h4 className="font-weight-normal">UX methods</h4>
                         <p className="lead">
                         Interviews<br/>
+                        Cognitive Walkthrough<br/>
                         Surveys<br/>
                         Contextual inquiry<br/>
                         Competitive analysis<br/>
                         Personas<br/>
+                        Scenarios<br/>
                         User stories<br/>
                         Defining requirements<br/>
                         Wireframing<br/>
@@ -60,7 +62,6 @@ export class AboutMe extends Component {
                         Persuasive design and communication<br/>
                         Behavior change techniques<br/>
                         Information architecture<br/>
-                        Data analytics<br/>
                         </p>
                     </div>
                     <div className="eduPic col-md-3">

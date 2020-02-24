@@ -10,28 +10,16 @@ import { Footer } from '../components/Footer';
 export class Home extends Component {
     constructor(props){
         super(props)
-        this.scrollToProjects = this.scrollToProjects.bind(this)
-        this.projects = React.createRef()
     }
 
-
-    //Not implemented
-    scrollToProjects(){
-        if(this.projects.current){
-            this.projects.current.scrollIntoView({ 
-            behavior: "smooth", 
-            block: "nearest"
-            })
-        }
-    }
 
     render() {
         return (
             <>
             <Navbar />
-            <HomeIntro scrollToProjects={this.scrollToProjects}/>
+            <HomeIntro />
             <CurrentWork/>
-            <Projects ref={this.projects}/>
+            <Projects />
             <AboutMe/>
             <Footer/>
             </>

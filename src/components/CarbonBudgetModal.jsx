@@ -50,7 +50,7 @@ function CarbonBudgetModal(props) {
                         any kind of information, I wanted appropriate information included as much as possible in the wireframes so that I early would
                             get a feel of how the website would be perceived early on in the process. Based on the research I wanted to increase the social presence of the website
                             and to enhance the users motivation to change behavior.</p>
-                        <h6>Web Development </h6><br></br>
+                        <h6>Frontend Development </h6><br></br>
                         <p> Two websites was developed using React.js, Bootstrap, and Chart.js. One with only visual 
                         feedback, such as a normal website, and another one with sound feedback as well. On the websites, users can calculate how long their 
                         lifelong carbon budget will last. The results was either presented only visually, through a graph and text, or with sound, music and voice, added. The voice was partly added in order to 

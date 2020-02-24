@@ -39,8 +39,8 @@ function GendeRadarModal(props) {
                             <div className="processContainer">
                                 <img className="processPic" src={genderProcess} alt=""></img>
                             </div>
-                            <h6>Research </h6><br></br>First a complete understanding of how the inequality index is calculated and what variables it is based on was essential. 
-                            <p> After that I could start researching about information architecture and visualisation, early on the mantra “overview first, zoom and filter, 
+                            <h6>Research </h6><br></br> 
+                            <p>First a complete understanding of how the inequality index is calculated and what variables it is based on was essential. After that I could start researching about information architecture and visualisation, early on the mantra “overview first, zoom and filter, 
                             then details on demand” was adopted. Since the index is worldwide it was decided to use a world map as an overview. Then I did a lot of research of 
                             different visualization techniques and diagrams, such as sunbursts, sankeys and chord diagrams. Because the index is made up of many different variable, 
                             which all contribute a different amount to the index, it was decided that a more detailed view of the index would be visualized with a sankey diagram. </p>
@@ -50,7 +50,7 @@ function GendeRadarModal(props) {
                             <p>When we had a better sense of what direction the design should take, more high fidelity wireframes was developed.  </p>
                             <img className="hifiPic" src={hifi} alt=""></img>
 
-                            <h6>Web Development </h6><br></br>
+                            <h6>Frontend Development </h6><br></br>
                             <p> I was responsible for developing the sankey diagram which would display more detailed information to the user about what 
                             factors in a specific country affects its inequality index. Unfortunately, problems arose with how the back-end would 
                             work with the sankey. As a result I had to quickly adapt and decided to work on developing a tree diagram instead, which also includes a 
@@ -68,7 +68,7 @@ function GendeRadarModal(props) {
                             but it had good error prevention and offered the user a lot of control. </p>
                             <h4 className="font-weight-normal">What I learned</h4>
                             <p>Even though I learned a great amount about Information architecture and visualization, and how to develop for it, my biggest takeaway is 
-                                how important communication is in a large team project. We were around 8 people working on the projects, some UX designers like myself but 
+                                how important communication is in a large team project. We were a cross-functional team with 8 people working on the project, some UX designers like myself but 
                                 also front-end and back-end developers, and it takes a lot of time and meetings just to get things going. As soon as we had our goal set and 
                                 the first wireframes done, it was so much easier to progress in the work.   </p>
                         </div>

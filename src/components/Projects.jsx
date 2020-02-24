@@ -48,7 +48,7 @@ export class Projects extends Component {
                 <h1 className="projecth1 font-weight-normal">Selected Projects</h1>
             </div>
             <div className="container">
-                <div className="row" style={{marginBottom: '50px'}}>
+                <div className="row justify-content-center" style={{marginBottom: '50px'}}>
                 <ProjectCard 
                     id="1"
                     name="Spotify Running 2.0"
@@ -59,11 +59,20 @@ export class Projects extends Component {
                     details={this.details}
                     modal="#modal1"/>
                 <ProjectCard 
+                    id="3"
+                    name="GendeRadar" 
+                    description="Working in a cross-functional team with the goal to visualize the variables which UN's gender inequality index is built upon and to show how gender 
+                    inequality looks on a world wide scale."
+                    keywords="Information Architecture, Frontend Development, Heuristic Evaluation"
+                    imgUrl={genderIcon}
+                    details={this.details}
+                    modal="#modal3" />
+                <ProjectCard 
                     id="4"
                     name="Carbon Budgets"
                     description="By developing a website in React.js and conducting user tests I explored how the combination of sound and visual feedback 
                     influences persuasiveness."
-                    keywords="Web Development, User Tests, Persuasive design"
+                    keywords="Frontend Development, User Tests, Persuasive design"
                     imgUrl={carbonIcon}
                     details={this.details}
                     modal="#modal4"/>
@@ -76,15 +85,6 @@ export class Projects extends Component {
                     imgUrl={veloIcon}
                     details={this.details}
                     modal="#modal2"/>
-                <ProjectCard 
-                    id="3"
-                    name="GendeRadar" 
-                    description="This project is about visualizing the variables which the gender inequality index is built upon and to show how gender 
-                    inequality looks on a world wide scale."
-                    keywords="Information Architecture, Front-end Development, Heuristic Evaluation"
-                    imgUrl={genderIcon}
-                    details={this.details}
-                    modal="#modal3" />
                 {/*<ProjectCard 
                     id="5"
                     name="Social Media Use" 
