@@ -30,38 +30,39 @@ export class AboutMe extends Component {
                         <h2 className="featurette-heading font-weight-light">Skills</h2>
                         <h4 className="font-weight-normal">UX methods</h4>
                         <p className="lead">
-                        Interviews<br/>
-                        Cognitive Walkthrough<br/>
-                        Surveys<br/>
-                        Contextual inquiry<br/>
-                        Competitive analysis<br/>
-                        Personas<br/>
-                        Scenarios<br/>
-                        User stories<br/>
-                        Defining requirements<br/>
-                        Wireframing<br/>
-                        Prototyping<br/>
-                        Usability testing<br/>
-                        Heuristic evaluation<br/>
-                        A/B testing<br/>
-                        Multivariate Testing<br/>
+                            Interviews<br/>
+                            Cognitive Walkthrough<br/>
+                            Surveys<br/>
+                            Contextual inquiry<br/>
+                            Competitive analysis<br/>
+                            Personas<br/>
+                            Scenarios<br/>
+                            User stories<br/>
+                            Defining requirements<br/>
+                            Wireframing<br/>
+                            Hi-fi &amp; lo-fi Prototyping<br/>
+                            Usability testing<br/>
+                            Heuristic evaluation<br/>
+                            A/B testing<br/>
+                            Multivariate Testing<br/>
                         </p>
                     </div>
                     <div className="skillText col-md-4">
                         <h4 className="font-weight-normal">Development</h4>
                         <p className="lead">
-                        HTML<br/>
-                        CSS<br/>
-                        Javascript<br/>
-                        JQuery<br/>
-                        React.js<br/>
+                            HTML<br/>
+                            CSS<br/>
+                            Javascript<br/>
+                            JQuery<br/>
+                            React.js<br/>
+                            Python
                         </p>
                         <br></br>
                         <h4 className="font-weight-normal">Other</h4>
                         <p className="lead">
-                        Persuasive design and communication<br/>
-                        Behavior change techniques<br/>
-                        Information architecture<br/>
+                            Persuasive design and communication<br/>
+                            Behavior change techniques<br/>
+                            Information architecture<br/>
                         </p>
                     </div>
                     <div className="eduPic col-md-3">
