@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ProjectCard from './ProjectCard.jsx'
 import './Projects.css';
+import Fade from 'react-reveal/Fade';
 
 import carbonIcon from '../images/avpro.jpg'
 import bierIcon from '../images/bgt.jpg'
@@ -47,8 +48,10 @@ export class Projects extends Component {
             <div className="container">
                 <h1 className="projecth1 font-weight-normal">Selected Projects</h1>
             </div>
+            <Fade>
             <div className="container">
                 <div className="row justify-content-center" style={{marginBottom: '50px'}}>
+                
                 <ProjectCard 
                     id="1"
                     name="Spotify Running 2.0"
@@ -120,7 +123,14 @@ export class Projects extends Component {
                     purpose for people eager to drink in a park. Some technologies used to create this was Google Maps API, Onsen UI, JavaScript, HTML, and CSS"
                     imgUrl={bierIcon}
                     details={this.details}/> */}
-                <SpotifyRunningModal
+               
+                </div>
+                
+                <div id="about"></div>
+                <hr></hr>
+            </div>
+            </Fade>
+            <SpotifyRunningModal
                     id="projectModal1"
                     name={this.state.name}
                     fullDescription={this.state.description}
@@ -153,10 +163,6 @@ export class Projects extends Component {
                     process={this.state.process}
                     brief={this.state.brief}
                     modal={this.state.modal}/>
-                </div>
-                <div id="about"></div>
-                <hr></hr>
-            </div>
             </>
         )
     }

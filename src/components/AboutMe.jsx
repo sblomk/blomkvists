@@ -10,7 +10,7 @@ export class AboutMe extends Component {
     render() {
         return (
             <div className="container">
-                <h1 className="projecth1 font-weight-normal">About me</h1>
+                <h1 className="projecth1 font-weight-normal" id="Projects">About me</h1>
                 <div className="aboutMeRow row featurette">  
                     <div className="eduPic col-md-4">
                         <img className="deedster d-block w-100" src={edu} alt=""></img>
@@ -25,9 +25,9 @@ export class AboutMe extends Component {
                         <p className="lead">BS Media Technology - <span className="blue font-weight-bolder">Interaction Design</span> track</p>
                     </div>
                 </div>
+                <h2 className="featurette-heading font-weight-light">Skills</h2>
                 <div className="skillsRow row featurette">  
                     <div className="first col-md-4">
-                        <h2 className="featurette-heading font-weight-light">Skills</h2>
                         <h4 className="font-weight-normal">UX methods</h4>
                         <p className="lead">
                             Interviews<br/>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 import './HomeIntro.css';
 import meBook from '../images/jagBok.jpg';
 import meBookFirst from '../images/jagBokFirst.jpg'
@@ -9,9 +10,10 @@ export class HomeIntro extends Component {
     
     render() {
         return (
+            <Fade>
             <div className="intro">
             <div className="container">
-                <div className="row featurette" style={{marginBottom: '40px'}}>  
+                <div className="row featurette" style={{marginBottom: '40px'}}>
                     <div className="col-md-5 order-md-1">
                         <a href="#about">
                         <img src={meBookFirst} alt="Sebastian" className="introImg d-block w-100" 
@@ -47,6 +49,7 @@ export class HomeIntro extends Component {
                 <hr/>
             </div>
             </div>
+            </Fade>
         )
     }
 }

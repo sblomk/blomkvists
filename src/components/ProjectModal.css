@@ -1,3 +1,8 @@
+.modal-content{
+    border-radius: 0%;
+    border: 0vh;
+}
+
 .processPic {
     height: 90px;
 }

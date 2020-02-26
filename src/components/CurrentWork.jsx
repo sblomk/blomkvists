@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 import './AboutMe.css';
 import deedster from '../images/deedster.png';
+import FadeIn from 'react-fade-in';
 
 
 export class CurrentWork extends Component {
@@ -9,7 +11,8 @@ export class CurrentWork extends Component {
     render() {
         return (
             <div className="container">
-                <h1 className="projecth1 font-weight-normal">Current Project</h1>
+                <Fade>
+                <h1 className="projecth1 font-weight-normal" id="Projects">Current Project</h1>
                 <div className="aboutMeRow row featurette">  
                     <div className="deedsterText col-md-7">
                         <h2 className="featurette-heading font-weight-light">I'm doing my Master Thesis at Deedster!</h2>
@@ -23,6 +26,7 @@ export class CurrentWork extends Component {
                     </div>
                 </div>
                 <hr></hr>
+                </Fade>
             </div>
         )
     }
