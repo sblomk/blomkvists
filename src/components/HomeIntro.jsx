@@ -11,16 +11,14 @@ export class HomeIntro extends Component {
     render() {
         return (
             <Fade>
-            <div className="intro">
+            <div className="intro" id="top">
             <div className="container">
                 <div className="row featurette" style={{marginBottom: '40px'}}>
                     <div className="col-md-5 order-md-1">
-                        <a href="#about">
                         <img src={meBookFirst} alt="Sebastian" className="introImg d-block w-100" 
                             onMouseOver = {e => (e.currentTarget.src = meBook)} 
                             onMouseOut = {e => (e.currentTarget.src = meBookFirst)}
                         />
-                        </a>
                     </div>
                     <div className="introText col-md-7 order-md-2">
                         <h1 className="featurette-heading font-weight-light">Hello, I'm Sebastian!</h1>

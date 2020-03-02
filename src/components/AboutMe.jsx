@@ -10,7 +10,7 @@ export class AboutMe extends Component {
     render() {
         return (
             <div className="container">
-                <h1 className="projecth1 font-weight-normal" id="Projects">About me</h1>
+                <h1 className="projecth1 font-weight-normal" id="About">About me</h1>
                 <div className="aboutMeRow row featurette">  
                     <div className="eduPic col-md-4">
                         <img className="deedster d-block w-100" src={edu} alt=""></img>
@@ -37,8 +37,8 @@ export class AboutMe extends Component {
                             Competitive analysis<br/>
                             Personas<br/>
                             Scenarios<br/>
-                            User stories<br/>
-                            Defining requirements<br/>
+                            Experience Mapping<br/>
+                            User Flows<br/>
                             Wireframing<br/>
                             Hi-fi &amp; lo-fi Prototyping<br/>
                             Usability testing<br/>
@@ -63,6 +63,7 @@ export class AboutMe extends Component {
                             Persuasive design and communication<br/>
                             Behavior change techniques<br/>
                             Information architecture<br/>
+                            Cross-functional teams
                         </p>
                     </div>
                     <div className="eduPic col-md-3">

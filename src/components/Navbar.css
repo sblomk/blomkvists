@@ -16,7 +16,16 @@ font-size: 18px;
 color: #1d4382;
 }
 
+a:hover {
+  border-bottom: 2px solid #1d4382;
+  font-weight: 500
+}
+
 h4{
 color: #1d4382;
+}
+
+#HeaderText:hover {
+  border: 0px;
 }
 
