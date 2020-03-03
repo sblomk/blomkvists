@@ -48,7 +48,9 @@ function SpotifyRunningModal(props) {
                             identifying more needs and motivation to use Spotify Running. Now we also had enough information and user insight to put together a mood board. 
                              </p>
                             <img className="moodPic" src={storm} alt=""></img>
-                            <h6>Goals &amp; Visions </h6><br></br><p> Goal to make it easier to use Spotify Running with the vision: The design of Spotify Running should work instantly in synergy with your workout and flawlessly adapt to your own personal taste in music.</p>
+                            <h6>Goals &amp; Visions </h6><br></br>
+                            <p> We set our goal to make it easier to use Spotify Running with the vision: The design of Spotify Running should work instantly in synergy with your 
+                                workout and flawlessly adapt to your own personal taste in music.</p>
                             <h6>Prototyping </h6><br></br><p> After some brainstorming and wireframing a final product design was decided. </p>
                             <img className="wirePic" src={wireframes} alt=""></img>
                             <p>To be able to test the new design on users, a high fidelity interactive prototype was developed using the 
@@ -59,8 +61,11 @@ function SpotifyRunningModal(props) {
                                 certain tempo was also conceptualized and would be turned on and off by tapping the phone, much like interaction 
                                 with wireless headphones nowadays. These features would make music more tailored to you workout, as well as 
                                 eliminating interruptive interaction with the phone.   </p>
-                            <h6>User Tests </h6><br></br><p> Put users in a scenario and performing a 
-                            think-aloud to catch potential design problems while using the prototype. Used Microsoft Reaction Card Method to test the desirability of the prototype. Short user interview.</p>
+                            <h6>User Tests </h6><br></br>
+                            <p> During the user tests we put potential users in a scenario and let them perform a 
+                            think-aloud to catch potential design problems while using the prototype navigating through the scenario. 
+                            Then the Microsoft Reaction Card Method was used to test the desirability of the prototype. 
+                            To identify any additional shortcomings in the design I held short user interview about their experience with the prototype.</p>
                             <h4 className="font-weight-normal">What I Learned</h4>
                             <p>Aside from learning more about the UX design process I also gained more experience on how to work in a group with several designers. 
                                 We were five people on the team and we had to divide the work appropriately based on interest and skill. 
