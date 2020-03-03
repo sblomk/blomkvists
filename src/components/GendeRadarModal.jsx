@@ -49,7 +49,6 @@ function GendeRadarModal(props) {
                             <img className="mapPic" src={lofi} alt=""></img>
                             <p>When we had a better sense of what direction the design should take, more high fidelity wireframes was developed.  </p>
                             <img className="hifiPic" src={hifi} alt=""></img>
-
                             <h6>Frontend Development </h6><br></br>
                             <p> I was responsible for developing the sankey diagram which would display more detailed information to the user about what 
                             factors in a specific country affects its inequality index. Unfortunately, problems arose with how the back-end would 
@@ -63,9 +62,12 @@ function GendeRadarModal(props) {
                                 clicks the node and the entire map will show details on that specific variable as well as information about what the variable actually 
                                 measures Just beneath the tree. Furthermore, by clicking a country, a user can get information about the specific variable for the specific 
                                 country and its development over time.</p>
-                            <h6>Heuristic Evaluation </h6><br></br>The heuristic evaluation was based on Jakob Nielsen's 10 general principles for interaction design. 
-                            <p> We for instance noticed that the site was not clearly displaying the system status to the user and the design wasn’t that minimalistic, 
-                            but it had good error prevention and offered the user a lot of control. </p>
+                            <h6>Heuristic Evaluation </h6><br></br>
+                            <p>To get an understanding of the current site experience I conducted a heuristic evaluation which was based on Jakob Nielsen's 10 general 
+                                principles for interaction design. I for instance noticed that the site was not clearly displaying the system status to the user 
+                                causing some confusion whether or not the site had refreshed after clicking on a country on the world map. Without getting a tutorial of how to use the site,
+                                it could be hard for the user to understand how to use the site without some trial and error. No help nor documentation was available. On the plus side
+                                the system matched well with the real world and spoke the user's "language". </p>
                             <h4 className="font-weight-normal">What I learned</h4>
                             <p>Even though I learned a great amount about Information architecture and visualization, and how to develop for it, my biggest takeaway is 
                                 how important communication is in a large team project. We were a cross-functional team with 8 people working on the project, some UX designers like myself but 
