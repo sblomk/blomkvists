@@ -43,3 +43,7 @@
 .atdiv {
     margin-left: 3%;
 }
+
+a:hover {
+    text-decoration: none;
+}

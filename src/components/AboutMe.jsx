@@ -63,7 +63,8 @@ export class AboutMe extends Component {
                             Persuasive design and communication<br/>
                             Behavior change techniques<br/>
                             Information architecture<br/>
-                            Cross-functional teams
+                            Cross-functional teams<br/>
+                            Google Analytics
                         </p>
                     </div>
                     <div className="eduPic col-md-3">
