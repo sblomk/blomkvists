@@ -55,7 +55,8 @@ export class AboutMe extends Component {
                             Javascript<br/>
                             JQuery<br/>
                             React.js<br/>
-                            Python
+                            Python<br/>
+                            SQL
                         </p>
                         <br></br>
                         <h4 className="font-weight-normal">Other</h4>

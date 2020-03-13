@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Home.css';
+import {PageView, initGA} from '../components/Tracking';
 import Navbar from '../components/Navbar.jsx';
 import { Projects } from '../components/Projects';
 import { HomeIntro } from '../components/HomeIntro';
@@ -12,6 +13,10 @@ export class Home extends Component {
         super(props)
     }
 
+    componentDidMount() {
+        initGA('UA-159829577-1');
+        PageView();
+     }
 
     render() {
         return (

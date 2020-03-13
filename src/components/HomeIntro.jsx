@@ -4,6 +4,7 @@ import './HomeIntro.css';
 import meBook from '../images/jagBok.jpg';
 import meBookFirst from '../images/jagBokFirst.jpg'
 import linkedin from '../images/lin.png'
+import { Event } from "./Tracking";
 
 export class HomeIntro extends Component {
 
@@ -32,7 +33,13 @@ export class HomeIntro extends Component {
                              <img className="linkedin" src={linkedin} alt=""></img>
                             </div>
                             <div className="linked col-md-3">
-                                <a className="lead blue linkeda" href="https://www.linkedin.com/in/sblomkvist/" target="_blank" rel="noopener noreferrer"><span className="font-weight-bolder">Linkedin Profile</span></a>
+                                <a 
+                                    className="lead blue linkeda" 
+                                    href="https://www.linkedin.com/in/sblomkvist/"
+                                    onClick={()=> Event("Contact", "Clicked Linkedin link", "HomeIntro")}
+                                    target="_blank" 
+                                    rel="noopener noreferrer">
+                                <span className="font-weight-bolder">Linkedin Profile</span></a>
                             </div>
                             <div className="atdiv col-md-1">
                              <p className="blue atmail"><span className="font-weight-bolder">@</span></p>

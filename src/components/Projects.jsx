@@ -15,6 +15,7 @@ import SpotifyRunningModal from './SpotifyRunningModal.jsx';
 import GendeRadarModal from './GendeRadarModal.jsx';
 import CarbonBudgetModal from './CarbonBudgetModal.jsx';
 import VeloModal from './VeloModal.jsx';
+import BachelorModal from './SocialMediaModal.jsx'
 
 
 export class Projects extends Component {
@@ -23,7 +24,6 @@ export class Projects extends Component {
         this.state ={
             id: "none",
             name: "none",
-            brief: "none",
             description: "none",
             keywords: "none",
             modal: "none",
@@ -32,7 +32,7 @@ export class Projects extends Component {
         this.focusProject = React.createRef()
     }
 
-    details(id, name, desc, keys, modal, proto){
+    details(id, name, desc, keys, modal){
         this.setState({
             id: id,
             name: name,
@@ -88,28 +88,16 @@ export class Projects extends Component {
                     imgUrl={veloIcon}
                     details={this.details}
                     modal="#modal2"/>
-                {/*<ProjectCard 
+                <ProjectCard 
                     id="5"
                     name="Social Media Use" 
                     description="Bachelor thesis exploring how and why users of social media distribute their activity over several of these at the same time."
                     process={bachelorProcess}
                     keywords="UX research, User Interviews, Competative Analysis"
-                    fullDescription="This qualitative study examines how and why users of social media distribute their activity over several of these at the same time. 
-                    Focus was on the three social media sites of Facebook, Instagram and Snapchat. The study was carried through by keeping paired interviews with users 
-                    of these sites and then applying the results on the framework of contextual integrity. The result of the study is interesting both for companies 
-                    developing and using social media sites, as well as for future research in the field.
-                    The results showed a difference in the sharing of information across the three different sites. 
-                    The foremost cause to the difference was identified to be the size of the social networks on the sites, and the influence 
-                    this had on what was perceived as an intrusion in the privacy of the user when the information was shared. Aside from the increased 
-                    visibility that comes with a larger social network, it also affected the underlying activity of the social medium. Which can be seen 
-                    as a reason for a decreasing active use. The conclusions about the future were that social media, today and in the future, have to 
-                    give the users an option to separate their social network on the sites into separate groups. Alternatively that the social media 
-                    sites themselves has to become niched for a specific part of a user’s social network. This will allow the users to share acceptable 
-                    information in suitable channels.
-                    "
                     imgUrl={bachelorIcon}
-                    details={this.details}/>
-                <ProjectCard 
+                    details={this.details}
+                    modal="#modal5"/>
+                {/*<ProjectCard 
                     id="6"
                     name="BierGarten"
                     process={bierProcess}
@@ -136,16 +124,13 @@ export class Projects extends Component {
                     fullDescription={this.state.description}
                     keywords={this.state.keywords}
                     process={this.state.process}
-                    brief={this.state.brief}
-                    modal={this.state.modal}
-                    proto={this.state.proto}/>
+                    modal={this.state.modal}/>
                 <VeloModal
                     id="projectModal2"
                     name={this.state.name}
                     fullDescription={this.state.description}
                     keywords={this.state.keywords}
                     process={this.state.process}
-                    brief={this.state.brief}
                     modal={this.state.modal}/>
                 <GendeRadarModal
                     id="projectModal3"
@@ -153,7 +138,6 @@ export class Projects extends Component {
                     fullDescription={this.state.description}
                     keywords={this.state.keywords}
                     process={this.state.process}
-                    brief={this.state.brief}
                     modal={this.state.modal}/>
                 <CarbonBudgetModal
                     id="projectModal4"
@@ -161,7 +145,13 @@ export class Projects extends Component {
                     fullDescription={this.state.description}
                     keywords={this.state.keywords}
                     process={this.state.process}
-                    brief={this.state.brief}
+                    modal={this.state.modal}/>
+                <BachelorModal
+                    id="projectModal5"
+                    name={this.state.name}
+                    fullDescription={this.state.description}
+                    keywords={this.state.keywords}
+                    process={this.state.process}
                     modal={this.state.modal}/>
             </>
         )
