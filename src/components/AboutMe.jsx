@@ -31,20 +31,20 @@ export class AboutMe extends Component {
                         <h4 className="font-weight-normal">UX methods</h4>
                         <p className="lead">
                             Interviews<br/>
-                            Cognitive Walkthrough<br/>
+                            Cognitive walkthrough<br/>
                             Surveys<br/>
                             Contextual inquiry<br/>
                             Competitive analysis<br/>
                             Personas<br/>
                             Scenarios<br/>
-                            Experience Mapping<br/>
-                            User Flows<br/>
+                            Experience mapping<br/>
+                            User flows<br/>
                             Wireframing<br/>
-                            Hi-fi &amp; lo-fi Prototyping<br/>
+                            Hi-fi &amp; lo-fi prototyping<br/>
                             Usability testing<br/>
                             Heuristic evaluation<br/>
                             A/B testing<br/>
-                            Multivariate Testing<br/>
+                            Multivariate testing<br/>
                         </p>
                     </div>
                     <div className="skillText col-md-4">

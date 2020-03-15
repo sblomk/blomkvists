@@ -18,8 +18,8 @@ export class CurrentWork extends Component {
                         <h2 className="featurette-heading font-weight-light">I'm doing my Master Thesis at Deedster!</h2>
                         <p className="lead"> I'm working on how to increase user engagement with push notifications.<span className="blue font-weight-bolder"> My mission is to design 
                         push-strategies to enhance the User Experience to persuade and motivate increased engagement with the Deedster app</span>. 
-                        I will be conducting multivariate testing and an engagement analysis from user behavioral data 
-                        to determine the optimal strategy for their application.</p>
+                        I will be conducting A/B testing and an engagement analysis from user behavioral data 
+                        to determine an optimal strategy for their application.</p>
                     </div>
                     <div className="col-md-5">
                     <img className="deedster d-block w-100" src={deedster} alt=""></img>
